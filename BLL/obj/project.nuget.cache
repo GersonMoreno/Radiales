@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QNlXmR4JbEA2jzv+hQ+wBxzINs93N8o55TVlSe8rP9f9XlfTyn3H/5Y6kB/0xV4xRbg1m+VQaaH2EWV7xCwrKg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gerson\\source\\repos\\Radiales\\BLL\\BLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gerson\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\gerson\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
