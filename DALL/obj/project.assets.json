@@ -201,11 +201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gerson\\source\\repos\\Radiales\\DALL\\DALL.csproj",
+      "projectUniqueName": "C:\\Users\\gerson\\Documents\\IA\\Radiales\\DALL\\DALL.csproj",
       "projectName": "DALL",
-      "projectPath": "C:\\Users\\gerson\\source\\repos\\Radiales\\DALL\\DALL.csproj",
+      "projectPath": "C:\\Users\\gerson\\Documents\\IA\\Radiales\\DALL\\DALL.csproj",
       "packagesPath": "C:\\Users\\gerson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gerson\\source\\repos\\Radiales\\DALL\\obj\\",
+      "outputPath": "C:\\Users\\gerson\\Documents\\IA\\Radiales\\DALL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gerson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -222,8 +222,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\gerson\\source\\repos\\Radiales\\ENTITY\\ENTITY.csproj": {
-              "projectPath": "C:\\Users\\gerson\\source\\repos\\Radiales\\ENTITY\\ENTITY.csproj"
+            "C:\\Users\\gerson\\Documents\\IA\\Radiales\\ENTITY\\ENTITY.csproj": {
+              "projectPath": "C:\\Users\\gerson\\Documents\\IA\\Radiales\\ENTITY\\ENTITY.csproj"
             }
           }
         }

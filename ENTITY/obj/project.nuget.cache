@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aYTetIHBsQMAfG6CQvCY0Aj8VtAVzlGcJQLXCNLssmHWVFHzxEjiBW0KTVEnsH/6hArsOY3jsx7M+iXA4sYBrA==",
+  "dgSpecHash": "emVNK3Lq1GATHQ6nq3g9ZnAXlT3jQDmB0T0P5y4BBjEyzzsGk7JLc7QOikjN8mll7A0oQ2O3PG0F9GsWYdrqSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gerson\\source\\repos\\Radiales\\ENTITY\\ENTITY.csproj",
+  "projectFilePath": "C:\\Users\\gerson\\Documents\\IA\\Radiales\\ENTITY\\ENTITY.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gerson\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\gerson\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
