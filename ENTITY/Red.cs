@@ -7,12 +7,13 @@ namespace ENTITY
     public class Red
     {
         public  List<Patron> Patrones { get; set; }
-        public Capa Capa { get; set; }
+        public List<Radial> Radiales { get; set; }
         public List<Salida> Salidas { get; set; }
         public Red()
         {
             Patrones = new List<Patron>();
-            Capa = new Capa();
+            Radiales = new List<Radial>();
+            Salidas = new List<Salida>();
         }
         public double Entrenar()
         {

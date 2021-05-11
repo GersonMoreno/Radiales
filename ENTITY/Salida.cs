@@ -6,13 +6,15 @@ namespace ENTITY
 {
     public class Salida
     {
-        public List<double> Valores { get; set; }
+        public double Valor { get; set; }
         public List<Peso> Pesos { get; set; }
         public  Umbral  Umbral { get; set; }
+        public double Error { get; set; }
+        public double YD { get; set; }
+        public double YR { get; set; }
         public Salida()
         {
             Pesos = new List<Peso>();
-            Valores = new List<double>();
             Umbral = new Umbral();
         }
     }

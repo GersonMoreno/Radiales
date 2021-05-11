@@ -7,10 +7,10 @@ namespace ENTITY
     public class Radial
     {
         public List<double> Valores { get; set; }
-        public List<Distancia> Distancias { get; set; }
+        public List<double> Distancias { get; set; }
         public Radial()
         {
-            Distancias = new List<Distancia>();
+            Distancias = new List<double>();
             Valores = new List<double>();
         }
         
