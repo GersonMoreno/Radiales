@@ -28,6 +28,16 @@ namespace ENTITY
                     Radiales[r].Activacion = Activacion.Radial(CalcularDistancia(Patrones[i].Entradas, Radiales[r].Valores));
                 }
             }
+            for (int i = 0; i < Patrones.Count; i++)
+            {
+                for (int s = 0; s < Salidas.Count; s++)
+                {
+                    for (int r = 0; r < Radiales.Count; r++)
+                    {
+
+                    }
+                }
+            }
             return 0.0;
         }
         private double CalcularDistancia(List<double> entradas, List<double> valorRadial)
