@@ -12,6 +12,7 @@ namespace ENTITY
         public double Error { get; set; }
         public double YD { get; set; }
         public double YR { get; set; }
+
         public Salida()
         {
             Pesos = new List<Peso>();

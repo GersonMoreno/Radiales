@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gerson\\.nuget\\packages\\": {}
+    "C:\\Users\\bdmtnz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gerson\\Documents\\IA\\Radiales\\ENTITY\\ENTITY.csproj",
+      "projectUniqueName": "C:\\Users\\bdmtnz\\Documents\\DesktopProjects\\IA\\Radiales\\ENTITY\\ENTITY.csproj",
       "projectName": "ENTITY",
-      "projectPath": "C:\\Users\\gerson\\Documents\\IA\\Radiales\\ENTITY\\ENTITY.csproj",
-      "packagesPath": "C:\\Users\\gerson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gerson\\Documents\\IA\\Radiales\\ENTITY\\obj\\",
+      "projectPath": "C:\\Users\\bdmtnz\\Documents\\DesktopProjects\\IA\\Radiales\\ENTITY\\ENTITY.csproj",
+      "packagesPath": "C:\\Users\\bdmtnz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bdmtnz\\Documents\\DesktopProjects\\IA\\Radiales\\ENTITY\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gerson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bdmtnz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -235,7 +235,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

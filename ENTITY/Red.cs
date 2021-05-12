@@ -9,12 +9,18 @@ namespace ENTITY
         public  List<Patron> Patrones { get; set; }
         public List<Radial> Radiales { get; set; }
         public List<Salida> Salidas { get; set; }
+        public int Iteraciones { get; set; }
+        public int Entrenamientos { get; set; }
+        public double Error { get; set; }
+        public double ErrorOptimo { get; set; }
+
         public Red()
         {
             Patrones = new List<Patron>();
             Radiales = new List<Radial>();
             Salidas = new List<Salida>();
         }
+
         public double Entrenar()
         {
             for (int i = 0; i < Patrones.Count; i++)
@@ -23,5 +29,6 @@ namespace ENTITY
             }
             return 0.0;
         }
+
     }
 }

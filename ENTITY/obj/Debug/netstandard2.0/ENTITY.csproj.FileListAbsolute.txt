@@ -1,0 +1,9 @@
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\ENTITY\bin\Debug\netstandard2.0\ENTITY.deps.json
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\ENTITY\bin\Debug\netstandard2.0\ENTITY.dll
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\ENTITY\bin\Debug\netstandard2.0\ENTITY.pdb
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\ENTITY\obj\Debug\netstandard2.0\ENTITY.csprojAssemblyReference.cache
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\ENTITY\obj\Debug\netstandard2.0\ENTITY.AssemblyInfoInputs.cache
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\ENTITY\obj\Debug\netstandard2.0\ENTITY.AssemblyInfo.cs
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\ENTITY\obj\Debug\netstandard2.0\ENTITY.csproj.CoreCompileInputs.cache
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\ENTITY\obj\Debug\netstandard2.0\ENTITY.dll
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\ENTITY\obj\Debug\netstandard2.0\ENTITY.pdb

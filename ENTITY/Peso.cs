@@ -11,5 +11,10 @@ namespace ENTITY
         {
             Valor = new double();
         }
+
+        public Peso(double Valor)
+        {
+            this.Valor = Valor;
+        }
     }
 }

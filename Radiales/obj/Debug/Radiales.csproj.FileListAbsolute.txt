@@ -1,0 +1,17 @@
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.csprojAssemblyReference.cache
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Properties.Resources.resources
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.csproj.GenerateResource.cache
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.csproj.CoreCompileInputs.cache
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\Radiales.exe.config
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\Radiales.exe
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\Radiales.pdb
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\BLL.dll
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\DALL.dll
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\ENTITY.dll
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\BLL.pdb
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\DALL.pdb
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\ENTITY.pdb
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Main.resources
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.csproj.CopyComplete
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.exe
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.pdb

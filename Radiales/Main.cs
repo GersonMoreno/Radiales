@@ -8,15 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using ENTITY;
+using BLL;
+
 namespace Radiales
 {
     public partial class Main : Form
     {
+        Service Service;
+
         public Main()
         {
+            Service = new Service();
             InitializeComponent();
+            Service.GetXML();
         }
 
-        
     }
 }
