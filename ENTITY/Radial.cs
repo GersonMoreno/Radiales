@@ -7,11 +7,15 @@ namespace ENTITY
     public class Radial
     {
         public List<double> Valores { get; set; }
-        public List<double> Distancias { get; set; }
+        public double Distancia { get; set; }
+        public double Activacion { get; set; }
+        public List<Peso> Pesos { get; set; }
+        public Umbral Umbral { get; set; }
         public Radial()
         {
-            Distancias = new List<double>();
             Valores = new List<double>();
+            Pesos = new List<Peso>();
+            Umbral = new Umbral();
         }
         
     }
