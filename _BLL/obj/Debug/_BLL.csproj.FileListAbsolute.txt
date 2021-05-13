@@ -9,3 +9,14 @@ C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_BLL\obj\Debug\_BLL.csproj
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_BLL\obj\Debug\_BLL.csproj.CopyComplete
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_BLL\obj\Debug\_BLL.dll
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_BLL\obj\Debug\_BLL.pdb
+C:\Users\gerson\Documents\IA\Radiales\_BLL\bin\Debug\_BLL.dll
+C:\Users\gerson\Documents\IA\Radiales\_BLL\bin\Debug\_BLL.pdb
+C:\Users\gerson\Documents\IA\Radiales\_BLL\bin\Debug\_DAL.dll
+C:\Users\gerson\Documents\IA\Radiales\_BLL\bin\Debug\_ENTITY.dll
+C:\Users\gerson\Documents\IA\Radiales\_BLL\bin\Debug\_DAL.pdb
+C:\Users\gerson\Documents\IA\Radiales\_BLL\bin\Debug\_ENTITY.pdb
+C:\Users\gerson\Documents\IA\Radiales\_BLL\obj\Debug\_BLL.csprojAssemblyReference.cache
+C:\Users\gerson\Documents\IA\Radiales\_BLL\obj\Debug\_BLL.csproj.CoreCompileInputs.cache
+C:\Users\gerson\Documents\IA\Radiales\_BLL\obj\Debug\_BLL.csproj.CopyComplete
+C:\Users\gerson\Documents\IA\Radiales\_BLL\obj\Debug\_BLL.dll
+C:\Users\gerson\Documents\IA\Radiales\_BLL\obj\Debug\_BLL.pdb

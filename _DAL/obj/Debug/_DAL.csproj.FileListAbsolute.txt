@@ -9,3 +9,14 @@ C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\_DAL.csproj
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\_DAL.csproj.CopyComplete
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\_DAL.dll
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\_DAL.pdb
+C:\Users\gerson\Documents\IA\Radiales\_DAL\bin\Debug\_DAL.dll
+C:\Users\gerson\Documents\IA\Radiales\_DAL\bin\Debug\_DAL.pdb
+C:\Users\gerson\Documents\IA\Radiales\_DAL\bin\Debug\_ENTITY.dll
+C:\Users\gerson\Documents\IA\Radiales\_DAL\bin\Debug\_ENTITY.pdb
+C:\Users\gerson\Documents\IA\Radiales\_DAL\obj\Debug\_DAL.csprojAssemblyReference.cache
+C:\Users\gerson\Documents\IA\Radiales\_DAL\obj\Debug\Interop.MLApp.dll
+C:\Users\gerson\Documents\IA\Radiales\_DAL\obj\Debug\_DAL.csproj.ResolveComReference.cache
+C:\Users\gerson\Documents\IA\Radiales\_DAL\obj\Debug\_DAL.csproj.CoreCompileInputs.cache
+C:\Users\gerson\Documents\IA\Radiales\_DAL\obj\Debug\_DAL.csproj.CopyComplete
+C:\Users\gerson\Documents\IA\Radiales\_DAL\obj\Debug\_DAL.dll
+C:\Users\gerson\Documents\IA\Radiales\_DAL\obj\Debug\_DAL.pdb

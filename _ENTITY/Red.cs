@@ -22,30 +22,13 @@ namespace _ENTITY
             Salidas = new List<Salida>();
             Activacion = new Activacion();
         }
-        public double Entrenar()
+        public void Entrenar()
         {
-            
-            for (int i = 0; i < Patrones.Count; i++)
-            {
-                for (int r = 0; r < Radiales.Count; r++)
-                {
-                    Radiales[r].Distancia = CalcularDistancia(Patrones[i].Entradas, Radiales[r].Valores);
-                    Radiales[r].Activacion = Activacion.Radial(CalcularDistancia(Patrones[i].Entradas, Radiales[r].Valores));
-                }
-            }
-            for (int i = 0; i < Patrones.Count; i++)
-            {
-                for (int s = 0; s < Salidas.Count; s++)
-                {
-                    for (int r = 0; r < Radiales.Count; r++)
-                    {
 
-                    }
-                }
-            }
-            return 0.0;
+            
+
         }
-        private double CalcularDistancia(List<double> entradas, List<double> valorRadial)
+        public double CalcularDistancia(List<double> entradas, List<double> valorRadial)
         {
             double sumatoria=0.0;
             for (int i = 0; i < entradas.Count; i++)

@@ -11,9 +11,11 @@ namespace _DAL
     public class Repository
     {
         MLApp.MLApp Api;
+        
         public Repository()
         {
             Api = new MLApp.MLApp();
+           
         }
 
         public Red Interpolar(Red Red)
