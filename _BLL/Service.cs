@@ -12,9 +12,14 @@ namespace _BLL
             Repo = new Repository();
         }
 
-        public void Interpolar()
+        public void Interpolar(Red Red)
         {
-            Repo.Interpolar();
+            Repo.Interpolar(Red);
+        }
+
+        public Red GetXML()
+        {
+            return Repo.GetXML(null);
         }
 
     }

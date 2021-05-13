@@ -16,11 +16,79 @@ namespace _DAL
             Api = new MLApp.MLApp();
         }
 
-        public void Interpolar()
+        public Red Interpolar(Red Red)
         {
-            var Command = "2+2";
-            var Answer = Api.Execute(Command);
+            var A = "[";
+            Red.Patrones.ForEach(p =>
+            {
+                A += "1";
+                Red.Radiales.ForEach(r =>
+                {
+                    A += " " + r.Activacion;
+                });
+                A += ";";
+            });
+            A = A.Remove(A.Length - 1, 1);
+            A += "]";
+            Console.WriteLine(A);
+
+            var Y = "[";
+            Red.Patrones.ForEach(p =>
+            {
+                p.Esperado.ForEach(e =>
+                {
+                    Y += e + " ";
+                });
+                Y = Y.Remove(Y.Length - 1, 1);
+                Y += ";";
+            });
+            Y = Y.Remove(Y.Length - 1, 1);
+            Y += "]";
+            Console.WriteLine(Y);
+
+            var Operation = $"Y = {Y};\n A = {A};\n A\\Y";
+            Console.WriteLine(Operation);
+
+            var Answer = Api.Execute(Operation);
             Console.WriteLine(Answer);
+
+            var Lines = Answer.Split('\n');
+            var umbral = true;
+            Red.Salidas.ForEach(s =>
+            {
+                s.Pesos.Clear();
+            });
+            for (int i = 4; i < Lines.Length; i++)
+            {
+                if (Lines[i] != "")
+                {
+                    var Clean = Lines[i].Trim();
+                    var NumberSplit = Clean.Split(' ');
+                    var s = 0;
+                    foreach (var item in NumberSplit)
+                    {
+                        if(item != "")
+                        {
+                            var number = item.Replace('.', ',');
+                            if (umbral)
+                            {
+                                Red.Salidas[s].Umbral.Valor = Double.Parse(number);
+                            }
+                            else
+                                Red.Salidas[s].Pesos.Add(new Peso(Double.Parse(number)));
+                            Console.WriteLine(item);
+                            if (s >= (Red.Salidas.Count - 1))
+                            {
+                                s = 0;
+                                umbral = false;
+                            }
+                            s++;
+                        }
+                    }
+                }
+            }
+
+            return Red;
         }
 
         public Red GetXML(string Path)

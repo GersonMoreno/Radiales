@@ -16,11 +16,14 @@ namespace Radiales
     public partial class Dashboard : Form
     {
         Service Service;
+        Red Red;
+
         public Dashboard()
         {
             Service = new Service();
             InitializeComponent();
-            Service.Interpolar();
+            Red = Service.GetXML();
+            Service.Interpolar(Red);
         }
     }
 }
