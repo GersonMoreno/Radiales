@@ -1,0 +1,11 @@
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\bin\Debug\_DAL.dll
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\bin\Debug\_DAL.pdb
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\bin\Debug\_ENTITY.dll
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\bin\Debug\_ENTITY.pdb
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\_DAL.csprojAssemblyReference.cache
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\Interop.MLApp.dll
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\_DAL.csproj.ResolveComReference.cache
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\_DAL.csproj.CoreCompileInputs.cache
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\_DAL.csproj.CopyComplete
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\_DAL.dll
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_DAL\obj\Debug\_DAL.pdb

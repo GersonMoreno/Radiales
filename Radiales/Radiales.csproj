@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Radiales</RootNamespace>
     <AssemblyName>Radiales</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,17 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs">
+    <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -81,17 +79,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{c7727d36-fae3-490c-93d4-3bfa7fde2171}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DALL\DALL.csproj">
-      <Project>{8001b483-cec6-4a7b-8596-f05aca323b76}</Project>
-      <Name>DALL</Name>
-    </ProjectReference>
+    <None Include="Resources\5897fbe2f421bb49d85633c45f2720b4.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\5897fbe2f421bb49d85633c45f2720b4.jpg" />
+    <ProjectReference Include="..\_BLL\_BLL.csproj">
+      <Project>{1787b12a-5631-4fc9-a0ab-a4a5fe580adb}</Project>
+      <Name>_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_ENTITY\_ENTITY.csproj">
+      <Project>{755fdf28-81fd-433c-b92f-9367f7f1edec}</Project>
+      <Name>_ENTITY</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
