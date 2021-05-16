@@ -32,3 +32,5 @@ C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiale
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.csproj.CopyComplete
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.exe
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.pdb
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Generalizador.resources
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Graficador.resources

@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Xml;
 
-using MLApp;
 using _ENTITY;
 
 namespace _DAL
@@ -15,7 +14,7 @@ namespace _DAL
         public Repository()
         {
             Api = new MLApp.MLApp();
-           
+
         }
 
         public Red Interpolar(Red Red)
@@ -52,6 +51,8 @@ namespace _DAL
             //Console.WriteLine(Operation);
 
             var Answer = Api.Execute(Operation);
+            Api.MinimizeCommandWindow();
+            Api.Quit();
             //Console.WriteLine(Answer);
 
             var Lines = Answer.Split('\n');
