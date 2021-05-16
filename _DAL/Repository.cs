@@ -32,7 +32,7 @@ namespace _DAL
             }
             A = A.Remove(A.Length - 1, 1);
             A += "]";
-            Console.WriteLine(A);
+            //Console.WriteLine(A);
 
             var Y = "[";
             Red.Patrones.ForEach(p =>
@@ -46,13 +46,13 @@ namespace _DAL
             });
             Y = Y.Remove(Y.Length - 1, 1);
             Y += "]";
-            Console.WriteLine(Y);
+            //Console.WriteLine(Y);
 
             var Operation = $"Y = {Y};\n A = {A};\n A\\Y";
-            Console.WriteLine(Operation);
+            //Console.WriteLine(Operation);
 
             var Answer = Api.Execute(Operation);
-            Console.WriteLine(Answer);
+            //Console.WriteLine(Answer);
 
             var Lines = Answer.Split('\n');
             var umbral = true;
@@ -78,7 +78,7 @@ namespace _DAL
                             }
                             else
                                 Red.Salidas[s].Pesos.Add(new Peso(Double.Parse(number)));
-                            Console.WriteLine(item);
+                            //Console.WriteLine(item);
                             if (s >= (Red.Salidas.Count - 1))
                             {
                                 s = 0;

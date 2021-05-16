@@ -61,8 +61,15 @@ namespace _BLL
             EG /= Red.Salidas.Count;
             if (EG> Red.ErrorOptimo)
             {
-                //Entrenar(Red);
-                Console.WriteLine(EG);
+                var numeroRadios = Math.Round(Red.Radiales.Count*1.5);
+                Red.Radiales.Clear();
+                for (int i = 0; i < numeroRadios; i++)
+                {
+                    Red.Radiales.Add(new Radial());
+                }
+                Console.WriteLine("\n" + EG);
+                Entrenar(Red);
+                
             }
             else
             {

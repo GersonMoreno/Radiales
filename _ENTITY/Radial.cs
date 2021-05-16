@@ -53,7 +53,7 @@ namespace _ENTITY
                 Result = Negativo ? Numero * -1 : Numero;
             }
             while (Result < Menor);
-            Console.WriteLine($"Menor: {Menor} | Mayor: {Mayor} | Resultado: {Result}");
+            //Console.WriteLine($"Menor: {Menor} | Mayor: {Mayor} | Resultado: {Result}");
             return Result;
         }
 
