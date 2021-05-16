@@ -116,11 +116,14 @@ namespace Radiales
 
         private void ShowInfo(Red Red)
         {
-            Plataforma.Red = Red;
+            //Plataforma.Red = Red;
             LbError.Text = "" + Plataforma.Red.Error;
-            LbIteraciones.Text = "" + Plataforma.Red.Entrenamientos;
+            LbSalida.Text = "" + Plataforma.Red.Salidas.Count;
+            LbError.Text = "" + Plataforma.Red.Error;
             //LbPesos.Text = "" + Plataforma.W;
-            //LbUmbral.Text = "" + Plataforma.Red.Umbral.Valor;
+            LbUmbral.Text = "" + Plataforma.Red.Salidas.Count;
+            LbPesos.Text = "" + Plataforma.Red.Salidas[0].Pesos.Count;
+            LbValores.Text = "" + Plataforma.Red.Radiales.Count;
         }
 
     }

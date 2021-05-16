@@ -84,6 +84,8 @@ namespace Radiales
             //LbUmbral.Text = Plataforma.Red.Umbral.Valor.ToString();
             LbError.Text = Plataforma.Red.Error.ToString();
             LbMenor.Text = Menor.ToString();
+            LbIntentos.Text = Plataforma.Red.Iteraciones.ToString();
+            LbErrorPor.Text = (Plataforma.Red.Error / Plataforma.Red.ErrorOptimo).ToString();
             //LbWs.Text = Plataforma.W;
         }
 

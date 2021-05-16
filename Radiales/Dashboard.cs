@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 using _BLL;
 using _ENTITY;
@@ -23,18 +24,37 @@ namespace Radiales
         {
             Service = new Service();
             InitializeComponent();
-            Red = Service.GetXML(null);
-            Plataforma.Red = Red;
-            //Service.Interpolar(Red);
-            //Service.Entrenar(Red);
+            BtnPausa.Visible = false;
+            BtnIniciar.Visible = true;
+            Config();
         }
+        private void Config()
+        {
+            //FILTROS
+            OFD.Filter = "Archivo XML (*.XML)|*.XML";
+            SFD.Filter = "Archivo XML (*.XML)|*.XML";
+
+            //CONFIG LINK
+            linkLabel1.Links.Add(0, linkLabel1.Text.Length, "https://github.com/bdmtnz");
+            linkLabel2.Links.Add(0, linkLabel2.Text.Length, "https://sites.google.com/a/unicesar.edu.co/tonnyjimenezm/");
+
+            //CARGA DE CACHÉ
+            var Rd = Service.GetXML(null);
+            if (Rd != null)
+                Red = Plataforma.Red = Rd;
+            else
+                MessageBox.Show("El dataset está corrupto o está mal configurado");
+            ShowInfo(Red);
+            Abrir(new Home(Red));
+        }
+
 
         private void ShowInfo(Red N)
         {
             LbEntrada.Text = N.Patrones[0].Entradas.Count.ToString();
             LbPatrones.Text = N.Patrones.Count.ToString();
             LbSalidas.Text = N.Salidas.Count.ToString();
-            TbError.Text = N.ErrorOptimo.ToString();
+            NbError.Value = (decimal)N.ErrorOptimo;
             NbRadiales.Value = N.Radiales.Count;
         }
 
@@ -71,7 +91,7 @@ namespace Radiales
             /*Red = Service.GetXML(null);
             Plataforma.Red = Red;*/
             BtnIniciar.Visible = false;
-            //BtnPausa.Visible = true;
+            BtnPausa.Visible = true;
             RunTask();
             Abrir(new Graficador(Red));
         }
@@ -87,7 +107,7 @@ namespace Radiales
             Red = Plataforma.Red;
             ShowInfo(Red);
             PbCarga.Visible = false;
-            //BtnPausa.Visible = false;
+            BtnPausa.Visible = false;
             BtnIniciar.Visible = true;
         }
 
@@ -122,6 +142,7 @@ namespace Radiales
                         else
                             MessageBox.Show("El dataset está corrupto o está mal configurado");
                         ShowInfo(Red);
+                        Abrir(new Home(Red));
                     }
                     else
                         MessageBox.Show("Se ha eliminado o movido el archivo");
@@ -145,14 +166,22 @@ namespace Radiales
             }
         }
 
-        private void panel7_Paint(object sender, PaintEventArgs e)
+        private void OpenLink(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            ProcessStartInfo PInfo = new ProcessStartInfo(e.Link.LinkData.ToString());
+            Process.Start(PInfo);
 
         }
 
-        private void panel7_Paint_1(object sender, PaintEventArgs e)
+        private void BtnPausa_Click(object sender, EventArgs e)
         {
-
+            BtnPausa.Visible = false;
+            BtnIniciar.Visible = true;
+            Red = Plataforma.Red;
+            Plataforma.Continuar = false;
+            ShowInfo(Red);
         }
+
+
     }
 }
