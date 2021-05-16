@@ -52,31 +52,37 @@ namespace _BLL
                     Plataforma.Red.Salidas[j].Error = Plataforma.Red.Salidas[j].YD - Plataforma.Red.Salidas[j].YR;
                     ErrorPatron += Math.Abs(Plataforma.Red.Salidas[j].Error);
                 }
-                ErrorPatron /= Plataforma.Red.Patrones.Count;
-                EG += ErrorPatron;
             }
-            EG /= Plataforma.Red.Salidas.Count;
-            if (EG> Plataforma.Red.ErrorOptimo)
-            {
-                var numeroRadios = Math.Round(Plataforma.Red.Radiales.Count*1.5);
-                Plataforma.Red.Radiales.Clear();
-                for (int i = 0; i < numeroRadios; i++)
-                {
-                    Plataforma.Red.Radiales.Add(new Radial());
-                }
-                Console.WriteLine("\n" + EG);
-                Plataforma.Red.Error = EG;
-                Entrenar();                
-            }
-            else
+            EG = ErrorPatron / (Plataforma.Red.Salidas.Count * Plataforma.Red.Patrones.Count);
+            //if (EG > 0.0001 && EG < 0.001)
+            if (EG < Plataforma.Red.ErrorOptimo)
             {
                 Console.WriteLine("Criterio de paro");
                 Plataforma.Red.Error = EG;
+                PostXML(Plataforma.Red, null);
                 Console.WriteLine(EG);
+            }
+            //else if (EG > Plataforma.Red.ErrorOptimo)
+            else
+            {
+                var numeroRadios = Plataforma.Red.Radiales.Count + 1;
+                /*Plataforma.Red.Radiales.Clear();
+                for (int i = 0; i < numeroRadios; i++)
+                {
+                    Plataforma.Red.Radiales.Add(new Radial());
+                }*/
+                Console.WriteLine($"Nuevos radios: {numeroRadios} - error anterior: {EG}");
+                Plataforma.Red.Error = EG;
+                PostXML(Plataforma.Red, null);
+                Plataforma.Red.Radiales.ForEach(r =>
+                {
+                    r.Activacion.Clear();
+                    r.Distancia.Clear();
+                });
+                Entrenar();                
             }
             
         }
-
 
         public double CalcularYR(List<double> Activaciones, List<double> Pesos, double Umbral)
         {

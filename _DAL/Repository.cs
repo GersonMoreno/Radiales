@@ -65,7 +65,7 @@ namespace _DAL
             {
                 if (Lines[i] != "" && Lines[i] != "ans =")
                 {
-                    var Clean = Lines[i].Trim();
+                    var Clean = Lines[i].Trim('*').Trim();
                     var NumberSplit = Clean.Split(' ');
                     var s = 0;
                     foreach (var item in NumberSplit)
