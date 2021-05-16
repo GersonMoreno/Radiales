@@ -21,15 +21,15 @@ namespace _DAL
         public Red Interpolar(Red Red)
         {
             var A = "[";
-            Red.Patrones.ForEach(p =>
+            for (int i = 0; i < Red.Patrones.Count; i++)
             {
                 A += "1";
                 Red.Radiales.ForEach(r =>
                 {
-                    A += " " + r.Activacion;
+                    A += (" " + r.Activacion[i]).Replace(',','.');
                 });
                 A += ";";
-            });
+            }
             A = A.Remove(A.Length - 1, 1);
             A += "]";
             Console.WriteLine(A);
@@ -60,9 +60,9 @@ namespace _DAL
             {
                 s.Pesos.Clear();
             });
-            for (int i = 4; i < Lines.Length; i++)
+            for (int i = 0; i < Lines.Length; i++)
             {
-                if (Lines[i] != "")
+                if (Lines[i] != "" && Lines[i] != "ans =")
                 {
                     var Clean = Lines[i].Trim();
                     var NumberSplit = Clean.Split(' ');
@@ -107,14 +107,6 @@ namespace _DAL
                         {
                             switch (Reader.Name.ToString())
                             {
-                                case "I":
-                                    var Iteraciones = Reader.ReadString().Trim();
-                                    if (!Int32.TryParse(Iteraciones, out _))
-                                    {
-                                        return null;
-                                    }
-                                    Red.Iteraciones = Int32.Parse(Iteraciones);
-                                    break;
                                 case "E":
                                     var Error = Reader.ReadString().Trim();
                                     if (!Double.TryParse(Error, out _))
@@ -165,16 +157,15 @@ namespace _DAL
                                         }
                                     }
                                     break;
-                                case "D":
-                                    var Distancias = Reader.ReadString().Trim().Split(' ');
-                                    for (int i = 0; i < Distancias.Length; i++)
+                                case "R":
+                                    var Radiales = Reader.ReadString().Trim();
+                                    if (!Double.TryParse(Radiales, out _))
+                                    {
+                                        return null;
+                                    }
+                                    for (int i = 0; i < Int32.Parse(Radiales); i++)
                                     {
                                         Red.Radiales.Add(new Radial());
-                                        if (!Double.TryParse(Distancias[i], out _))
-                                        {
-                                            return null;
-                                        }
-                                        Red.Radiales[i].Distancia = Double.Parse(Distancias[i]);
                                     }
                                     break;
                                 case "W":
@@ -209,6 +200,21 @@ namespace _DAL
                                         }
                                     }
                                     ++U;
+                                    break;
+                                case "V":
+                                    var Valores = Reader.ReadString().Trim().Split(' ');
+                                    for (int i = 0; i < Valores.Length; i++)
+                                    {
+                                        var Valor = Valores[i].Split(';');
+                                        for (int j = 0; j < Valor.Length; j++)
+                                        {
+                                            if (!Double.TryParse(Valor[i], out _))
+                                            {
+                                                return null;
+                                            }
+                                            Red.Radiales[i].Valores.Add(Double.Parse(Valor[i]));
+                                        }
+                                    }
                                     break;
                             }
                         }

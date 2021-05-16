@@ -23,7 +23,10 @@ namespace Radiales
             Service = new Service();
             InitializeComponent();
             Red = Service.GetXML();
-            Service.Interpolar(Red);
+            //Service.Interpolar(Red);
+            Service.Entrenar(Red);
         }
+
+
     }
 }
