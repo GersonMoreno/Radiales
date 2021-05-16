@@ -41,6 +41,13 @@ namespace Radiales
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.NbRadiales = new System.Windows.Forms.NumericUpDown();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TbError = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.LbSalidas = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.LbPatrones = new System.Windows.Forms.Label();
@@ -49,13 +56,7 @@ namespace Radiales
             this.fff = new System.Windows.Forms.Label();
             this.OFD = new System.Windows.Forms.OpenFileDialog();
             this.SFD = new System.Windows.Forms.SaveFileDialog();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.TbError = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.NbRadiales = new System.Windows.Forms.NumericUpDown();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PbCarga)).BeginInit();
             this.PnPresentacion.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -67,10 +68,10 @@ namespace Radiales
             this.PnContenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.PnContenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnContenido.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.PnContenido.Location = new System.Drawing.Point(0, 145);
+            this.PnContenido.Location = new System.Drawing.Point(0, 146);
             this.PnContenido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PnContenido.Name = "PnContenido";
-            this.PnContenido.Size = new System.Drawing.Size(971, 440);
+            this.PnContenido.Size = new System.Drawing.Size(971, 439);
             this.PnContenido.TabIndex = 9;
             // 
             // PbCarga
@@ -240,6 +241,94 @@ namespace Radiales
             this.panel7.TabIndex = 10;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint_1);
             // 
+            // NbRadiales
+            // 
+            this.NbRadiales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.NbRadiales.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NbRadiales.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NbRadiales.ForeColor = System.Drawing.Color.White;
+            this.NbRadiales.Location = new System.Drawing.Point(357, 8);
+            this.NbRadiales.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.NbRadiales.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.NbRadiales.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NbRadiales.Name = "NbRadiales";
+            this.NbRadiales.Size = new System.Drawing.Size(45, 19);
+            this.NbRadiales.TabIndex = 36;
+            this.NbRadiales.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.panel6.Location = new System.Drawing.Point(357, 30);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(45, 1);
+            this.panel6.TabIndex = 35;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.label6.Location = new System.Drawing.Point(277, 11);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 15);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Radiales:";
+            // 
+            // TbError
+            // 
+            this.TbError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.TbError.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TbError.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TbError.ForeColor = System.Drawing.Color.White;
+            this.TbError.Location = new System.Drawing.Point(189, 10);
+            this.TbError.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TbError.Name = "TbError";
+            this.TbError.Size = new System.Drawing.Size(45, 16);
+            this.TbError.TabIndex = 33;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.panel5.Location = new System.Drawing.Point(189, 29);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(45, 1);
+            this.panel5.TabIndex = 32;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.label4.Location = new System.Drawing.Point(132, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 15);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Goal:";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.panel4.Location = new System.Drawing.Point(452, 9);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1, 20);
+            this.panel4.TabIndex = 21;
+            // 
             // LbSalidas
             // 
             this.LbSalidas.AutoSize = true;
@@ -310,93 +399,15 @@ namespace Radiales
             // 
             this.OFD.FileName = "openFileDialog1";
             // 
-            // panel4
+            // panel1
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panel4.Location = new System.Drawing.Point(452, 9);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1, 20);
-            this.panel4.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.label4.Location = new System.Drawing.Point(132, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 15);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Goal:";
-            // 
-            // TbError
-            // 
-            this.TbError.BackColor = System.Drawing.Color.Black;
-            this.TbError.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TbError.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbError.ForeColor = System.Drawing.Color.White;
-            this.TbError.Location = new System.Drawing.Point(189, 10);
-            this.TbError.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TbError.Name = "TbError";
-            this.TbError.Size = new System.Drawing.Size(45, 16);
-            this.TbError.TabIndex = 33;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panel5.Location = new System.Drawing.Point(189, 29);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(45, 1);
-            this.panel5.TabIndex = 32;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.label6.Location = new System.Drawing.Point(277, 11);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 15);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "Radiales:";
-            // 
-            // NbRadiales
-            // 
-            this.NbRadiales.BackColor = System.Drawing.Color.Black;
-            this.NbRadiales.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NbRadiales.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NbRadiales.ForeColor = System.Drawing.Color.White;
-            this.NbRadiales.Location = new System.Drawing.Point(357, 8);
-            this.NbRadiales.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.NbRadiales.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.NbRadiales.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.NbRadiales.Name = "NbRadiales";
-            this.NbRadiales.Size = new System.Drawing.Size(45, 19);
-            this.NbRadiales.TabIndex = 36;
-            this.NbRadiales.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panel6.Location = new System.Drawing.Point(357, 30);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(45, 1);
-            this.panel6.TabIndex = 35;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 145);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(971, 1);
+            this.panel1.TabIndex = 36;
             // 
             // Dashboard
             // 
@@ -404,6 +415,7 @@ namespace Radiales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 585);
             this.Controls.Add(this.PnContenido);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.PnPresentacion);
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -451,5 +463,6 @@ namespace Radiales
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel1;
     }
 }

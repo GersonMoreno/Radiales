@@ -52,7 +52,7 @@ namespace Radiales
             this.LbMenor.AutoSize = true;
             this.LbMenor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LbMenor.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbMenor.Location = new System.Drawing.Point(198, 206);
+            this.LbMenor.Location = new System.Drawing.Point(570, 55);
             this.LbMenor.Name = "LbMenor";
             this.LbMenor.Size = new System.Drawing.Size(18, 20);
             this.LbMenor.TabIndex = 22;
@@ -63,7 +63,7 @@ namespace Radiales
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(102, 206);
+            this.label4.Location = new System.Drawing.Point(474, 55);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 20);
             this.label4.TabIndex = 21;
@@ -74,7 +74,7 @@ namespace Radiales
             this.LbError.AutoSize = true;
             this.LbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LbError.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbError.Location = new System.Drawing.Point(198, 181);
+            this.LbError.Location = new System.Drawing.Point(412, 55);
             this.LbError.Name = "LbError";
             this.LbError.Size = new System.Drawing.Size(18, 20);
             this.LbError.TabIndex = 20;
@@ -85,7 +85,7 @@ namespace Radiales
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(148, 181);
+            this.label8.Location = new System.Drawing.Point(362, 55);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 20);
             this.label8.TabIndex = 19;
@@ -97,14 +97,14 @@ namespace Radiales
             this.grafica1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.grafica1.Legends.Add(legend1);
-            this.grafica1.Location = new System.Drawing.Point(391, 32);
+            this.grafica1.Location = new System.Drawing.Point(32, 146);
             this.grafica1.Name = "grafica1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.grafica1.Series.Add(series1);
-            this.grafica1.Size = new System.Drawing.Size(345, 157);
+            this.grafica1.Size = new System.Drawing.Size(419, 256);
             this.grafica1.TabIndex = 23;
             this.grafica1.Text = "chart1";
             // 
@@ -114,14 +114,14 @@ namespace Radiales
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(391, 221);
+            this.chart2.Location = new System.Drawing.Point(488, 146);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(345, 157);
+            this.chart2.Size = new System.Drawing.Size(450, 256);
             this.chart2.TabIndex = 24;
             this.chart2.Text = "grafica2";
             // 
@@ -129,7 +129,7 @@ namespace Radiales
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(506, 25);
+            this.label2.Location = new System.Drawing.Point(147, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 25;
@@ -139,7 +139,7 @@ namespace Radiales
             // 
             this.NombreGrafica2.AutoSize = true;
             this.NombreGrafica2.BackColor = System.Drawing.Color.White;
-            this.NombreGrafica2.Location = new System.Drawing.Point(485, 214);
+            this.NombreGrafica2.Location = new System.Drawing.Point(607, 138);
             this.NombreGrafica2.Name = "NombreGrafica2";
             this.NombreGrafica2.Size = new System.Drawing.Size(90, 13);
             this.NombreGrafica2.TabIndex = 26;
@@ -147,10 +147,9 @@ namespace Radiales
             // 
             // Graficador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
-            this.ClientSize = new System.Drawing.Size(782, 412);
+            this.ClientSize = new System.Drawing.Size(975, 439);
             this.ControlBox = false;
             this.Controls.Add(this.NombreGrafica2);
             this.Controls.Add(this.label2);

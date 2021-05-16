@@ -277,16 +277,6 @@ namespace _DAL
             XmlElement Red = doc.CreateElement(string.Empty, "Red", string.Empty);
             doc.AppendChild(Red);
 
-            XmlElement Iteracion = doc.CreateElement(string.Empty, "I", string.Empty);
-            Red.AppendChild(Iteracion);
-            XmlText IteracionText = doc.CreateTextNode(" " + R.Iteraciones.ToString() + " ");
-            Iteracion.AppendChild(IteracionText);
-
-            XmlElement Entrenamiento = doc.CreateElement(string.Empty, "EN", string.Empty);
-            Red.AppendChild(Entrenamiento);
-            XmlText EntrenamientoText = doc.CreateTextNode(" " + R.Entrenamientos.ToString() + " ");
-            Entrenamiento.AppendChild(EntrenamientoText);
-
             XmlElement Error = doc.CreateElement(string.Empty, "E", string.Empty);
             Red.AppendChild(Error);
             XmlText ErrorText = doc.CreateTextNode(" " + R.Error.ToString() + " ");
@@ -299,16 +289,14 @@ namespace _DAL
 
             XmlElement Patrones = doc.CreateElement(string.Empty, "P", string.Empty);
             var i = 0;
+            var Patron = "";
             foreach (var item in R.Patrones)
             {
-                XmlText Patron;
-                if (i == 0)
-                    Patron = doc.CreateTextNode(" " + item.GetPatron());
-                else
-                    Patron = doc.CreateTextNode(item.GetPatron());
-                Patrones.AppendChild(Patron);
-                ++i;
+                Patron += " " + item.GetPatron();
             }
+            Patron += " ";
+            XmlText PatronText = doc.CreateTextNode(Patron);
+            Patrones.AppendChild(PatronText);
             Red.AppendChild(Patrones);
 
             XmlElement Salidas = doc.CreateElement(string.Empty, "YD", string.Empty);
@@ -327,6 +315,11 @@ namespace _DAL
             Salidas.AppendChild(SalidaText);
             Red.AppendChild(Salidas);
 
+            XmlElement Radiales = doc.CreateElement(string.Empty, "R", string.Empty);
+            XmlText RadialesText = doc.CreateTextNode(" " + R.Radiales.Count.ToString() + " ");
+            Radiales.AppendChild(RadialesText);
+            Red.AppendChild(Radiales);
+
             XmlElement Pesos = doc.CreateElement(string.Empty, "W", string.Empty);
             var PesosMap = "";
             foreach (var item in R.Salidas)
@@ -335,10 +328,10 @@ namespace _DAL
                 {
                     PesosMap += $"{neurona.Valor};";
                 }
-                PesosMap = PesosMap.Substring(0, PesosMap.Length - 1);
+                PesosMap = PesosMap.Remove(PesosMap.Length - 1, 1);
                 PesosMap += " ";
             }
-            PesosMap = PesosMap.Substring(0, PesosMap.Length - 1);
+            PesosMap = PesosMap.Remove(PesosMap.Length - 1, 1);
             XmlText PesosText = doc.CreateTextNode(" " + PesosMap + " ");
             Pesos.AppendChild(PesosText);
             Red.AppendChild(Pesos);
@@ -347,12 +340,27 @@ namespace _DAL
             var UmbralesMap = "";
             foreach (var item in R.Salidas)
             {
-                UmbralesMap += $"{item.Umbral};";
+                UmbralesMap += $"{item.Umbral.Valor};";
             }
-            PesosMap = PesosMap.Substring(0, PesosMap.Length - 1);
-            XmlText UmbralesText = doc.CreateTextNode(" " + PesosMap + " ");
-            Umbrales.AppendChild(PesosText);
+            UmbralesMap = UmbralesMap.Remove(UmbralesMap.Length - 1, 1);
+            XmlText UmbralesText = doc.CreateTextNode(" " + UmbralesMap + " ");
+            Umbrales.AppendChild(UmbralesText);
             Red.AppendChild(Umbrales);
+
+            XmlElement Valores = doc.CreateElement(string.Empty, "V", string.Empty);
+            var ValoresMap = " ";
+            foreach (var item in R.Radiales)
+            {
+                foreach (var valor in item.Valores)
+                {
+                    ValoresMap += $"{valor};";
+                }
+                ValoresMap = ValoresMap.Remove(ValoresMap.Length - 1, 1);
+                ValoresMap += " ";
+            }
+            XmlText ValoresText = doc.CreateTextNode(ValoresMap);
+            Valores.AppendChild(ValoresText);
+            Red.AppendChild(Valores);
 
             var Default = @"DS.xml";
             doc.Save(Path ?? Default);

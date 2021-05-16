@@ -89,11 +89,11 @@ namespace Radiales
                                 {
                                     Row.Add(it2.ToString());
                                 }
-                                /*var Yrs = Red.Generalizar(item);
+                                var Yrs = Red.Generalizar(item);
                                 Yrs.ForEach(x =>
                                 {
                                     Row.Add(x.ToString());
-                                });*/
+                                });
                                 dataGridView1.Rows.Add(Row.ToArray());
                             }
                         }

@@ -52,12 +52,12 @@ namespace Radiales
 
         private void Training(object sender, EventArgs e)
         {
-            if (Red.Error <= Red.ErrorOptimo)
+            /*if (Red.Error <= Red.ErrorOptimo)
             {
                 MessageBox.Show("Esta red ya se encuentra entrenada, proceda a simular");
                 return;
-            }
-            else if (Red.Patrones.Count <= 0)
+            }*/
+            if (Red.Patrones.Count <= 0)
             {
                 MessageBox.Show("Esta red está vacia, llenela y entrenela");
                 return;
@@ -68,6 +68,8 @@ namespace Radiales
                 return;
             }*/
             //CargarCapas();
+            Red = Service.GetXML(null);
+            Plataforma.Red = Red;
             BtnIniciar.Visible = false;
             //BtnPausa.Visible = true;
             RunTask();

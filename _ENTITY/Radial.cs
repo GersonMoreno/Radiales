@@ -33,6 +33,7 @@ namespace _ENTITY
             //DEFINIMOS EL RANGO
             var Min = Entradas[0];
             var Max = Entradas[Entradas.Count - 1];
+            Valores.Clear();
             for (int i = 0; i < Patrones[0].Entradas.Count; i++)
             {
                 Valores.Add(Random(Min, Max));

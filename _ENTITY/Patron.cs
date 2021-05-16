@@ -26,7 +26,7 @@ namespace _ENTITY
             {
                 Patron += e + ";";
             });
-            Patron = Patron.Substring(Patron.Length - 1, 1);
+            Patron = Patron.Remove(Patron.Length - 1, 1);
             return Patron;
         }
 
