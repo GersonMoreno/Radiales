@@ -50,7 +50,7 @@ namespace _ENTITY
             do
             {
                 Numero = R.NextDouble() * Mayor;
-                System.Threading.Thread.Sleep(100);
+                System.Threading.Thread.Sleep(10);
                 Result = Negativo ? Numero * -1 : Numero;
             }
             while (Result < Menor);

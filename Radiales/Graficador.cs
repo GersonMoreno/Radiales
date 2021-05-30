@@ -104,7 +104,7 @@ namespace Radiales
                 LbEstado.ForeColor = Color.Orange;
             }
             LbIntentos.Text = Plataforma.Red.Iteraciones.ToString();
-            LbErrorPor.Text = (Plataforma.Red.Error / Plataforma.Red.ErrorOptimo).ToString();
+            LbErrorPor.Text = (Plataforma.Red.Error * 100).ToString();
             //LbWs.Text = Plataforma.W;
         }
 

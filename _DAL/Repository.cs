@@ -49,7 +49,7 @@ namespace _DAL
             //Console.WriteLine(Y);
 
             var Operation = $"Y = {Y};\n A = {A};\n A\\Y";
-            //Console.WriteLine(Operation);
+            Console.WriteLine(Operation);
 
             var Answer = Api.Execute(Operation);
             //Api.MinimizeCommandWindow();

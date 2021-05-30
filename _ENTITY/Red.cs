@@ -50,10 +50,10 @@ namespace _ENTITY
             {
                 activaciones.Add(Activacion.Radial(CalcularDistancia(patron.Entradas, Radiales[r].Valores)));
             }
-            Pesos = new List<double>();
 
             for (int j = 0; j < Salidas.Count; j++)
             {
+                Pesos = new List<double>();
                 for (int h = 0; h < Radiales.Count; h++)
                 {
                     Pesos.Add(Salidas[j].Pesos[h].Valor);
@@ -71,7 +71,9 @@ namespace _ENTITY
             {
                 suma += Activaciones[i] * Pesos[i];
             }
-            return (Xo * Umbral) + suma;
+            //return (Xo * Umbral) + suma;
+            return suma;
+            //return suma - Umbral;
         }
 
     }

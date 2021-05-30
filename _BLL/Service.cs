@@ -41,8 +41,6 @@ namespace _BLL
                 for (int i = 0; i < Plataforma.Red.Patrones.Count; i++)
                 {
                     ErrorPatron = 0.0;
-                    ErrorIteracion = .0;
-                    var ErrorSalidas = .0;
                     for (int j = 0; j < Plataforma.Red.Salidas.Count; j++)
                     {
                         Activaciones = new List<double>();
@@ -52,15 +50,13 @@ namespace _BLL
                             Activaciones.Add(Plataforma.Red.Radiales[h].Activacion[i]);
                             Pesos.Add(Plataforma.Red.Salidas[j].Pesos[h].Valor);
                         }
-
-                        Plataforma.Red.Salidas[j].YR = CalcularYR(Activaciones, Pesos, Plataforma.Red.Salidas[j].Umbral.Valor);
+                        Plataforma.Red.Salidas[j].YR = Plataforma.Red.CalcularYR(Activaciones, Pesos, Plataforma.Red.Salidas[j].Umbral.Valor);
                         Plataforma.Red.Salidas[j].Error = Plataforma.Red.Salidas[j].YD - Plataforma.Red.Salidas[j].YR;
-                        ErrorSalidas += Math.Abs(Plataforma.Red.Salidas[j].Error);
+                        ErrorPatron += Math.Abs(Plataforma.Red.Salidas[j].Error);
                     }
-                    ErrorPatron = ErrorSalidas / Plataforma.Red.Salidas.Count;
-                    ErrorIteracion += ErrorPatron;
+                    ErrorIteracion += ErrorPatron / Plataforma.Red.Salidas.Count;
                 }
-                EG = ErrorIteracion / Plataforma.Red.Patrones.Count;
+                EG = ErrorPatron / Plataforma.Red.Patrones.Count;
                 //if (EG > 0.0001 && EG < 0.001)
                 //if (EG < Plataforma.Red.ErrorOptimo && (EG > .0001 && EG < .005))
                 if (EG < Plataforma.Red.ErrorOptimo)
@@ -93,16 +89,6 @@ namespace _BLL
                 }
             }           
             
-        }
-
-        public double CalcularYR(List<double> Activaciones, List<double> Pesos, double Umbral)
-        {
-            double suma = 0.0, Xo = 1.0;
-            for (int i = 0; i < Activaciones.Count; i++)
-            {
-                suma += Activaciones[i] * Pesos[i];
-            }
-            return (Xo * Umbral) + suma;
         }
 
         public Red GetXML(string Path)
