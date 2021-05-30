@@ -31,6 +31,13 @@ namespace Radiales
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.PnContenido = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.LbSalidas = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.LbPatrones = new System.Windows.Forms.Label();
+            this.LbEntrada = new System.Windows.Forms.Label();
+            this.Label54 = new System.Windows.Forms.Label();
+            this.fff = new System.Windows.Forms.Label();
             this.PbCarga = new System.Windows.Forms.PictureBox();
             this.PnPresentacion = new System.Windows.Forms.Panel();
             this.BtnSimulation = new System.Windows.Forms.Button();
@@ -40,39 +47,119 @@ namespace Radiales
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.NbRadiales = new System.Windows.Forms.NumericUpDown();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TbError = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.LbSalidas = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.LbPatrones = new System.Windows.Forms.Label();
-            this.LbEntrada = new System.Windows.Forms.Label();
-            this.Label54 = new System.Windows.Forms.Label();
-            this.fff = new System.Windows.Forms.Label();
             this.OFD = new System.Windows.Forms.OpenFileDialog();
             this.SFD = new System.Windows.Forms.SaveFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.NbRadiales = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TbError = new System.Windows.Forms.TextBox();
+            this.PnContenido.SuspendLayout();
+            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbCarga)).BeginInit();
             this.PnPresentacion.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NbRadiales)).BeginInit();
             this.SuspendLayout();
             // 
             // PnContenido
             // 
-            this.PnContenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.PnContenido.BackColor = System.Drawing.Color.White;
+            this.PnContenido.Controls.Add(this.panel7);
             this.PnContenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnContenido.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.PnContenido.Location = new System.Drawing.Point(0, 146);
+            this.PnContenido.Location = new System.Drawing.Point(231, 108);
             this.PnContenido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PnContenido.Name = "PnContenido";
-            this.PnContenido.Size = new System.Drawing.Size(971, 439);
+            this.PnContenido.Size = new System.Drawing.Size(740, 477);
             this.PnContenido.TabIndex = 9;
+            this.PnContenido.Paint += new System.Windows.Forms.PaintEventHandler(this.PnContenido_Paint);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(69)))));
+            this.panel7.Controls.Add(this.LbSalidas);
+            this.panel7.Controls.Add(this.label13);
+            this.panel7.Controls.Add(this.LbPatrones);
+            this.panel7.Controls.Add(this.LbEntrada);
+            this.panel7.Controls.Add(this.Label54);
+            this.panel7.Controls.Add(this.fff);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 442);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(740, 35);
+            this.panel7.TabIndex = 10;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint_1);
+            // 
+            // LbSalidas
+            // 
+            this.LbSalidas.AutoSize = true;
+            this.LbSalidas.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbSalidas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.LbSalidas.Location = new System.Drawing.Point(544, 11);
+            this.LbSalidas.Name = "LbSalidas";
+            this.LbSalidas.Size = new System.Drawing.Size(13, 15);
+            this.LbSalidas.TabIndex = 20;
+            this.LbSalidas.Text = "#";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.label13.Location = new System.Drawing.Point(490, 11);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(51, 15);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "Salidas:";
+            // 
+            // LbPatrones
+            // 
+            this.LbPatrones.AutoSize = true;
+            this.LbPatrones.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbPatrones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.LbPatrones.Location = new System.Drawing.Point(422, 11);
+            this.LbPatrones.Name = "LbPatrones";
+            this.LbPatrones.Size = new System.Drawing.Size(13, 15);
+            this.LbPatrones.TabIndex = 17;
+            this.LbPatrones.Text = "#";
+            // 
+            // LbEntrada
+            // 
+            this.LbEntrada.AutoSize = true;
+            this.LbEntrada.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbEntrada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.LbEntrada.Location = new System.Drawing.Point(287, 12);
+            this.LbEntrada.Name = "LbEntrada";
+            this.LbEntrada.Size = new System.Drawing.Size(13, 15);
+            this.LbEntrada.TabIndex = 16;
+            this.LbEntrada.Text = "#";
+            // 
+            // Label54
+            // 
+            this.Label54.AutoSize = true;
+            this.Label54.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.Label54.Location = new System.Drawing.Point(357, 11);
+            this.Label54.Name = "Label54";
+            this.Label54.Size = new System.Drawing.Size(59, 15);
+            this.Label54.TabIndex = 14;
+            this.Label54.Text = "Patrones:";
+            // 
+            // fff
+            // 
+            this.fff.AutoSize = true;
+            this.fff.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.fff.Location = new System.Drawing.Point(223, 12);
+            this.fff.Name = "fff";
+            this.fff.Size = new System.Drawing.Size(59, 15);
+            this.fff.TabIndex = 13;
+            this.fff.Text = "Entradas:";
             // 
             // PbCarga
             // 
@@ -111,8 +198,8 @@ namespace Radiales
             this.BtnSimulation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSimulation.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.BtnSimulation.FlatAppearance.BorderSize = 0;
-            this.BtnSimulation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
-            this.BtnSimulation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
+            this.BtnSimulation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(100)))));
+            this.BtnSimulation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(100)))));
             this.BtnSimulation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSimulation.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
             this.BtnSimulation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
@@ -131,8 +218,8 @@ namespace Radiales
             this.BtnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnIniciar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.BtnIniciar.FlatAppearance.BorderSize = 0;
-            this.BtnIniciar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
-            this.BtnIniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
+            this.BtnIniciar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(100)))));
+            this.BtnIniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(100)))));
             this.BtnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
             this.BtnIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
@@ -151,8 +238,8 @@ namespace Radiales
             this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.BtnSave.FlatAppearance.BorderSize = 0;
-            this.BtnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
-            this.BtnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
+            this.BtnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(100)))));
+            this.BtnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(100)))));
             this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
             this.BtnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
@@ -171,8 +258,8 @@ namespace Radiales
             this.BtnOpen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnOpen.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.BtnOpen.FlatAppearance.BorderSize = 0;
-            this.BtnOpen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
-            this.BtnOpen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
+            this.BtnOpen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(100)))));
+            this.BtnOpen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(100)))));
             this.BtnOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
             this.BtnOpen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
@@ -191,9 +278,10 @@ namespace Radiales
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(159, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 26);
+            this.label2.Size = new System.Drawing.Size(212, 26);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Nombre del perro";
+            this.label2.Text = "Gerson Moreno Castillo";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -217,29 +305,35 @@ namespace Radiales
             this.panel2.Size = new System.Drawing.Size(129, 107);
             this.panel2.TabIndex = 0;
             // 
-            // panel7
+            // OFD
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
-            this.panel7.Controls.Add(this.NbRadiales);
-            this.panel7.Controls.Add(this.panel6);
-            this.panel7.Controls.Add(this.label6);
-            this.panel7.Controls.Add(this.TbError);
-            this.panel7.Controls.Add(this.panel5);
-            this.panel7.Controls.Add(this.label4);
-            this.panel7.Controls.Add(this.panel4);
-            this.panel7.Controls.Add(this.LbSalidas);
-            this.panel7.Controls.Add(this.label13);
-            this.panel7.Controls.Add(this.LbPatrones);
-            this.panel7.Controls.Add(this.LbEntrada);
-            this.panel7.Controls.Add(this.Label54);
-            this.panel7.Controls.Add(this.fff);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 107);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(971, 38);
-            this.panel7.TabIndex = 10;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint_1);
+            this.OFD.FileName = "openFileDialog1";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 107);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(971, 1);
+            this.panel1.TabIndex = 36;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.panel3.Controls.Add(this.NbRadiales);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.TbError);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 108);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(231, 477);
+            this.panel3.TabIndex = 37;
             // 
             // NbRadiales
             // 
@@ -247,7 +341,7 @@ namespace Radiales
             this.NbRadiales.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NbRadiales.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NbRadiales.ForeColor = System.Drawing.Color.White;
-            this.NbRadiales.Location = new System.Drawing.Point(357, 8);
+            this.NbRadiales.Location = new System.Drawing.Point(25, 240);
             this.NbRadiales.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NbRadiales.Maximum = new decimal(new int[] {
             1000,
@@ -260,7 +354,7 @@ namespace Radiales
             0,
             0});
             this.NbRadiales.Name = "NbRadiales";
-            this.NbRadiales.Size = new System.Drawing.Size(45, 19);
+            this.NbRadiales.Size = new System.Drawing.Size(171, 19);
             this.NbRadiales.TabIndex = 36;
             this.NbRadiales.Value = new decimal(new int[] {
             1,
@@ -268,23 +362,43 @@ namespace Radiales
             0,
             0});
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.label4.Location = new System.Drawing.Point(22, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 19);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Error objetivo:";
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panel6.Location = new System.Drawing.Point(357, 30);
+            this.panel6.Location = new System.Drawing.Point(25, 262);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(45, 1);
+            this.panel6.Size = new System.Drawing.Size(171, 1);
             this.panel6.TabIndex = 35;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.panel5.Location = new System.Drawing.Point(25, 128);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(171, 1);
+            this.panel5.TabIndex = 32;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.label6.Location = new System.Drawing.Point(277, 11);
+            this.label6.Location = new System.Drawing.Point(22, 204);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 15);
+            this.label6.Size = new System.Drawing.Size(69, 19);
             this.label6.TabIndex = 34;
             this.label6.Text = "Radiales:";
             // 
@@ -292,122 +406,13 @@ namespace Radiales
             // 
             this.TbError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.TbError.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TbError.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TbError.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TbError.ForeColor = System.Drawing.Color.White;
-            this.TbError.Location = new System.Drawing.Point(189, 10);
+            this.TbError.Location = new System.Drawing.Point(25, 109);
             this.TbError.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TbError.Name = "TbError";
-            this.TbError.Size = new System.Drawing.Size(45, 16);
+            this.TbError.Size = new System.Drawing.Size(171, 20);
             this.TbError.TabIndex = 33;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panel5.Location = new System.Drawing.Point(189, 29);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(45, 1);
-            this.panel5.TabIndex = 32;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.label4.Location = new System.Drawing.Point(132, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 15);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Goal:";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panel4.Location = new System.Drawing.Point(452, 9);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1, 20);
-            this.panel4.TabIndex = 21;
-            // 
-            // LbSalidas
-            // 
-            this.LbSalidas.AutoSize = true;
-            this.LbSalidas.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbSalidas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.LbSalidas.Location = new System.Drawing.Point(823, 11);
-            this.LbSalidas.Name = "LbSalidas";
-            this.LbSalidas.Size = new System.Drawing.Size(13, 15);
-            this.LbSalidas.TabIndex = 20;
-            this.LbSalidas.Text = "#";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.label13.Location = new System.Drawing.Point(769, 11);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(51, 15);
-            this.label13.TabIndex = 19;
-            this.label13.Text = "Salidas:";
-            // 
-            // LbPatrones
-            // 
-            this.LbPatrones.AutoSize = true;
-            this.LbPatrones.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbPatrones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.LbPatrones.Location = new System.Drawing.Point(701, 11);
-            this.LbPatrones.Name = "LbPatrones";
-            this.LbPatrones.Size = new System.Drawing.Size(13, 15);
-            this.LbPatrones.TabIndex = 17;
-            this.LbPatrones.Text = "#";
-            // 
-            // LbEntrada
-            // 
-            this.LbEntrada.AutoSize = true;
-            this.LbEntrada.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbEntrada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.LbEntrada.Location = new System.Drawing.Point(566, 12);
-            this.LbEntrada.Name = "LbEntrada";
-            this.LbEntrada.Size = new System.Drawing.Size(13, 15);
-            this.LbEntrada.TabIndex = 16;
-            this.LbEntrada.Text = "#";
-            // 
-            // Label54
-            // 
-            this.Label54.AutoSize = true;
-            this.Label54.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.Label54.Location = new System.Drawing.Point(636, 11);
-            this.Label54.Name = "Label54";
-            this.Label54.Size = new System.Drawing.Size(59, 15);
-            this.Label54.TabIndex = 14;
-            this.Label54.Text = "Patrones:";
-            // 
-            // fff
-            // 
-            this.fff.AutoSize = true;
-            this.fff.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.fff.Location = new System.Drawing.Point(502, 12);
-            this.fff.Name = "fff";
-            this.fff.Size = new System.Drawing.Size(59, 15);
-            this.fff.TabIndex = 13;
-            this.fff.Text = "Entradas:";
-            // 
-            // OFD
-            // 
-            this.OFD.FileName = "openFileDialog1";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 145);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(971, 1);
-            this.panel1.TabIndex = 36;
             // 
             // Dashboard
             // 
@@ -415,8 +420,8 @@ namespace Radiales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 585);
             this.Controls.Add(this.PnContenido);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.PnPresentacion);
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -425,11 +430,14 @@ namespace Radiales
             this.Opacity = 0.98D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.PnContenido.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbCarga)).EndInit();
             this.PnPresentacion.ResumeLayout(false);
             this.PnPresentacion.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NbRadiales)).EndInit();
             this.ResumeLayout(false);
 
@@ -456,13 +464,13 @@ namespace Radiales
         private System.Windows.Forms.PictureBox PbCarga;
         private System.Windows.Forms.OpenFileDialog OFD;
         private System.Windows.Forms.SaveFileDialog SFD;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.NumericUpDown NbRadiales;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TbError;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel1;
     }
 }

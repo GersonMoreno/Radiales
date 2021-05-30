@@ -121,7 +121,12 @@ namespace Radiales
             LbIteraciones.Text = "" + Plataforma.Red.Entrenamientos;
             //LbPesos.Text = "" + Plataforma.W;
             //LbUmbral.Text = "" + Plataforma.Red.Umbral.Valor;
+            LbRadiales.Text = "" + Plataforma.Red.Radiales.Count;
         }
 
+        private void Generalizador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

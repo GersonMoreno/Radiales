@@ -24,7 +24,7 @@ namespace _BLL
             });
             List<double> Activaciones = new List<double>();
             List<double> Pesos = new List<double>();
-            double ErrorPatron = 0.0, EG = 0.0;
+            double ErrorPatron = 0.0, Acoumador=0.0,EG = 0.0;
             
             for (int i = 0; i < Plataforma.Red.Patrones.Count; i++)
             {
@@ -37,23 +37,26 @@ namespace _BLL
             Plataforma.Red = Repo.Interpolar(Plataforma.Red);
             for (int j = 0; j < Plataforma.Red.Salidas.Count; j++)
             {
+                ErrorPatron = 0.0;
                 for (int i = 0; i < Plataforma.Red.Patrones.Count; i++)
                 {
                     Activaciones = new List<double>();
                     Pesos = new List<double>();
-                    ErrorPatron = 0.0;
+                    
                     for (int h = 0; h < Plataforma.Red.Radiales.Count; h++)
                     {
                         Activaciones.Add(Plataforma.Red.Radiales[h].Activacion[i]);
                         Pesos.Add(Plataforma.Red.Salidas[j].Pesos[h].Valor);
                     }
-                    
-                    Plataforma.Red.Salidas[j].YR = CalcularYR(Activaciones, Pesos,Plataforma.Red.Salidas[j].Umbral.Valor);
+
+                    Plataforma.Red.Salidas[j].YR = CalcularYR(Activaciones, Pesos, Plataforma.Red.Salidas[j].Umbral.Valor);
                     Plataforma.Red.Salidas[j].Error = Plataforma.Red.Salidas[j].YD - Plataforma.Red.Salidas[j].YR;
                     ErrorPatron += Math.Abs(Plataforma.Red.Salidas[j].Error);
                 }
+                
+                Acoumador += ErrorPatron;
             }
-            EG = ErrorPatron / (Plataforma.Red.Salidas.Count * Plataforma.Red.Patrones.Count);
+            EG = Acoumador / (Plataforma.Red.Salidas.Count * Plataforma.Red.Patrones.Count);
             //if (EG > 0.0001 && EG < 0.001)
             if (EG < Plataforma.Red.ErrorOptimo)
             {
@@ -65,6 +68,7 @@ namespace _BLL
             //else if (EG > Plataforma.Red.ErrorOptimo)
             else
             {
+                Plataforma.Red.Entrenamientos++;
                 var numeroRadios = Plataforma.Red.Radiales.Count + 1;
                 /*Plataforma.Red.Radiales.Clear();
                 for (int i = 0; i < numeroRadios; i++)

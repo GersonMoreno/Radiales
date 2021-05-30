@@ -8,7 +8,9 @@ namespace _ENTITY
     {
         public double Radial(double distancia)
         {
-            var Result = distancia == 0 ? 0 : Math.Pow(distancia, 2) * Math.Log(distancia);
+            distancia = Math.Abs(distancia);
+            //var Result = distancia == 0 ? 0 : Math.Pow(distancia, 2) * Math.Log(distancia);
+            var Result = Math.Pow(distancia, 2) * Math.Log(distancia);
             return Result;
         }
     }

@@ -31,9 +31,7 @@ namespace Radiales
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Generalizador));
             this.LbPath = new System.Windows.Forms.Label();
-            this.LbPesos = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.LbUmbral = new System.Windows.Forms.Label();
+            this.LbRadiales = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.LbIteraciones = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,62 +51,40 @@ namespace Radiales
             // 
             this.LbPath.AutoSize = true;
             this.LbPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LbPath.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbPath.Location = new System.Drawing.Point(298, 37);
+            this.LbPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.LbPath.Location = new System.Drawing.Point(103, 370);
             this.LbPath.Name = "LbPath";
             this.LbPath.Size = new System.Drawing.Size(16, 17);
             this.LbPath.TabIndex = 47;
             this.LbPath.Text = "#";
             // 
-            // LbPesos
+            // LbRadiales
             // 
-            this.LbPesos.AutoSize = true;
-            this.LbPesos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LbPesos.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbPesos.Location = new System.Drawing.Point(193, 255);
-            this.LbPesos.Name = "LbPesos";
-            this.LbPesos.Size = new System.Drawing.Size(16, 17);
-            this.LbPesos.TabIndex = 46;
-            this.LbPesos.Text = "#";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label12.ForeColor = System.Drawing.SystemColors.Control;
-            this.label12.Location = new System.Drawing.Point(57, 255);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 17);
-            this.label12.TabIndex = 45;
-            this.label12.Text = "Pesos: ";
-            // 
-            // LbUmbral
-            // 
-            this.LbUmbral.AutoSize = true;
-            this.LbUmbral.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LbUmbral.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbUmbral.Location = new System.Drawing.Point(192, 219);
-            this.LbUmbral.Name = "LbUmbral";
-            this.LbUmbral.Size = new System.Drawing.Size(16, 17);
-            this.LbUmbral.TabIndex = 44;
-            this.LbUmbral.Text = "#";
+            this.LbRadiales.AutoSize = true;
+            this.LbRadiales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LbRadiales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.LbRadiales.Location = new System.Drawing.Point(192, 219);
+            this.LbRadiales.Name = "LbRadiales";
+            this.LbRadiales.Size = new System.Drawing.Size(16, 17);
+            this.LbRadiales.TabIndex = 44;
+            this.LbRadiales.Text = "#";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label10.ForeColor = System.Drawing.SystemColors.Control;
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.label10.Location = new System.Drawing.Point(56, 219);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 17);
+            this.label10.Size = new System.Drawing.Size(71, 17);
             this.label10.TabIndex = 43;
-            this.label10.Text = "Umbrales: ";
+            this.label10.Text = "Radiales: ";
             // 
             // LbIteraciones
             // 
             this.LbIteraciones.AutoSize = true;
             this.LbIteraciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LbIteraciones.ForeColor = System.Drawing.SystemColors.Control;
+            this.LbIteraciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.LbIteraciones.Location = new System.Drawing.Point(192, 183);
             this.LbIteraciones.Name = "LbIteraciones";
             this.LbIteraciones.Size = new System.Drawing.Size(16, 17);
@@ -119,7 +95,7 @@ namespace Radiales
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label8.ForeColor = System.Drawing.SystemColors.Control;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.label8.Location = new System.Drawing.Point(56, 183);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(85, 17);
@@ -130,7 +106,7 @@ namespace Radiales
             // 
             this.LbError.AutoSize = true;
             this.LbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LbError.ForeColor = System.Drawing.SystemColors.Control;
+            this.LbError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.LbError.Location = new System.Drawing.Point(357, 68);
             this.LbError.Name = "LbError";
             this.LbError.Size = new System.Drawing.Size(16, 17);
@@ -141,7 +117,7 @@ namespace Radiales
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.label5.Location = new System.Drawing.Point(251, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 17);
@@ -152,7 +128,7 @@ namespace Radiales
             // 
             this.LbPatrones.AutoSize = true;
             this.LbPatrones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LbPatrones.ForeColor = System.Drawing.SystemColors.Control;
+            this.LbPatrones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.LbPatrones.Location = new System.Drawing.Point(192, 68);
             this.LbPatrones.Name = "LbPatrones";
             this.LbPatrones.Size = new System.Drawing.Size(16, 17);
@@ -163,7 +139,7 @@ namespace Radiales
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.label2.Location = new System.Drawing.Point(56, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 17);
@@ -174,8 +150,8 @@ namespace Radiales
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(251, 36);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.label1.Location = new System.Drawing.Point(56, 369);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 17);
             this.label1.TabIndex = 36;
@@ -184,16 +160,16 @@ namespace Radiales
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(254, 123);
+            this.dataGridView1.Location = new System.Drawing.Point(254, 121);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(531, 220);
+            this.dataGridView1.Size = new System.Drawing.Size(334, 220);
             this.dataGridView1.TabIndex = 35;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.label6.Location = new System.Drawing.Point(55, 31);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 24);
@@ -211,7 +187,7 @@ namespace Radiales
             this.BtnIniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
             this.BtnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.BtnIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.BtnIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.BtnIniciar.Location = new System.Drawing.Point(183, 29);
             this.BtnIniciar.Name = "BtnIniciar";
             this.BtnIniciar.Size = new System.Drawing.Size(32, 27);
@@ -227,12 +203,10 @@ namespace Radiales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
-            this.ClientSize = new System.Drawing.Size(844, 402);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(740, 477);
             this.Controls.Add(this.LbPath);
-            this.Controls.Add(this.LbPesos);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.LbUmbral);
+            this.Controls.Add(this.LbRadiales);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.LbIteraciones);
             this.Controls.Add(this.label8);
@@ -244,10 +218,12 @@ namespace Radiales
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnIniciar);
             this.Controls.Add(this.label6);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Generalizador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Generalizador";
+            this.Load += new System.EventHandler(this.Generalizador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -257,9 +233,7 @@ namespace Radiales
         #endregion
 
         private System.Windows.Forms.Label LbPath;
-        private System.Windows.Forms.Label LbPesos;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label LbUmbral;
+        private System.Windows.Forms.Label LbRadiales;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label LbIteraciones;
         private System.Windows.Forms.Label label8;

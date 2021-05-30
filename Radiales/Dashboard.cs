@@ -154,5 +154,20 @@ namespace Radiales
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PnContenido_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
