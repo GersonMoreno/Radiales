@@ -25,13 +25,13 @@ C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\_BLL.pd
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\_ENTITY.pdb
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\bin\Debug\_DAL.pdb
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.csprojAssemblyReference.cache
-C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Dashboard.resources
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Radiales.resources
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Generalizador.resources
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Graficador.resources
+C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Home.resources
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Properties.Resources.resources
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.csproj.GenerateResource.cache
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.csproj.CoreCompileInputs.cache
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.csproj.CopyComplete
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.exe
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.pdb
-C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Generalizador.resources
-C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Graficador.resources
-C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\Radiales\obj\Debug\Radiales.Home.resources

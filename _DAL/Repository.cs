@@ -14,7 +14,8 @@ namespace _DAL
         public Repository()
         {
             Api = new MLApp.MLApp();
-
+            Api.MinimizeCommandWindow();
+            Api.Quit();
         }
 
         public Red Interpolar(Red Red)
@@ -38,7 +39,7 @@ namespace _DAL
             {
                 p.Esperado.ForEach(e =>
                 {
-                    Y += e + " ";
+                    Y += (e + " ").Replace(',', '.');
                 });
                 Y = Y.Remove(Y.Length - 1, 1);
                 Y += ";";

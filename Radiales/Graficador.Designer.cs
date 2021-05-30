@@ -29,13 +29,13 @@ namespace Radiales
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.LbMenor = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.LbEstado = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.LbError = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,16 +51,16 @@ namespace Radiales
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
-            // LbMenor
+            // LbEstado
             // 
-            this.LbMenor.AutoSize = true;
-            this.LbMenor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LbMenor.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbMenor.Location = new System.Drawing.Point(594, 62);
-            this.LbMenor.Name = "LbMenor";
-            this.LbMenor.Size = new System.Drawing.Size(18, 20);
-            this.LbMenor.TabIndex = 22;
-            this.LbMenor.Text = "?";
+            this.LbEstado.AutoSize = true;
+            this.LbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.LbEstado.ForeColor = System.Drawing.SystemColors.Control;
+            this.LbEstado.Location = new System.Drawing.Point(594, 62);
+            this.LbEstado.Name = "LbEstado";
+            this.LbEstado.Size = new System.Drawing.Size(18, 20);
+            this.LbEstado.TabIndex = 22;
+            this.LbEstado.Text = "?";
             // 
             // label4
             // 
@@ -69,16 +69,16 @@ namespace Radiales
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
             this.label4.Location = new System.Drawing.Point(498, 62);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 20);
+            this.label4.Size = new System.Drawing.Size(72, 20);
             this.label4.TabIndex = 21;
-            this.label4.Text = "Menor error : ";
+            this.label4.Text = "Estado : ";
             // 
             // LbError
             // 
             this.LbError.AutoSize = true;
             this.LbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LbError.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbError.Location = new System.Drawing.Point(548, 30);
+            this.LbError.Location = new System.Drawing.Point(594, 30);
             this.LbError.Name = "LbError";
             this.LbError.Size = new System.Drawing.Size(18, 20);
             this.LbError.TabIndex = 20;
@@ -108,50 +108,52 @@ namespace Radiales
             // 
             // grafica1
             // 
-            chartArea3.AxisX.IsLabelAutoFit = false;
-            chartArea3.AxisX.LineColor = System.Drawing.SystemColors.WindowFrame;
-            chartArea3.AxisX.MajorGrid.Enabled = false;
-            chartArea3.AxisX.MajorTickMark.Enabled = false;
-            chartArea3.AxisY.IsLabelAutoFit = false;
-            chartArea3.AxisY.LineColor = System.Drawing.SystemColors.WindowFrame;
-            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea3.AxisY.MajorTickMark.Enabled = false;
-            chartArea3.Name = "ChartArea1";
-            this.grafica1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.grafica1.Legends.Add(legend3);
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.LineColor = System.Drawing.SystemColors.WindowFrame;
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisX.MajorTickMark.Enabled = false;
+            chartArea1.AxisY.IsLabelAutoFit = false;
+            chartArea1.AxisY.LineColor = System.Drawing.SystemColors.WindowFrame;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea1.AxisY.MajorTickMark.Enabled = false;
+            chartArea1.Name = "ChartArea1";
+            this.grafica1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.grafica1.Legends.Add(legend1);
             this.grafica1.Location = new System.Drawing.Point(32, 146);
             this.grafica1.Name = "grafica1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.grafica1.Series.Add(series3);
+            this.grafica1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.grafica1.Series.Add(series1);
             this.grafica1.Size = new System.Drawing.Size(439, 256);
             this.grafica1.TabIndex = 27;
             this.grafica1.Text = "chart1";
             // 
             // chart2
             // 
-            chartArea4.AxisX.IsLabelAutoFit = false;
-            chartArea4.AxisX.LineColor = System.Drawing.SystemColors.WindowFrame;
-            chartArea4.AxisX.MajorGrid.Enabled = false;
-            chartArea4.AxisX.MajorTickMark.Enabled = false;
-            chartArea4.AxisY.IsLabelAutoFit = false;
-            chartArea4.AxisY.LineColor = System.Drawing.SystemColors.WindowFrame;
-            chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea4.AxisY.MajorTickMark.Enabled = false;
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
+            chartArea2.AxisX.IsLabelAutoFit = false;
+            chartArea2.AxisX.LineColor = System.Drawing.SystemColors.WindowFrame;
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisX.MajorTickMark.Enabled = false;
+            chartArea2.AxisY.IsLabelAutoFit = false;
+            chartArea2.AxisY.LineColor = System.Drawing.SystemColors.WindowFrame;
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisY.MajorTickMark.Enabled = false;
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(502, 146);
             this.chart2.Name = "chart2";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart2.Series.Add(series4);
+            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(439, 256);
             this.chart2.TabIndex = 28;
             this.chart2.Text = "chart1";
@@ -223,7 +225,7 @@ namespace Radiales
             this.Controls.Add(this.LbIntentos);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.LbMenor);
+            this.Controls.Add(this.LbEstado);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.LbError);
             this.Controls.Add(this.label8);
@@ -245,7 +247,7 @@ namespace Radiales
 
         #endregion
 
-        private System.Windows.Forms.Label LbMenor;
+        private System.Windows.Forms.Label LbEstado;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label LbError;
         private System.Windows.Forms.Label label8;

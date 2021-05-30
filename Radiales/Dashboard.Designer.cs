@@ -1,7 +1,7 @@
 ﻿
 namespace Radiales
 {
-    partial class Dashboard
+    partial class Radiales
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Radiales
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Radiales));
             this.PnContenido = new System.Windows.Forms.Panel();
             this.PnPresentacion = new System.Windows.Forms.Panel();
             this.BtnPausa = new System.Windows.Forms.Button();
@@ -60,6 +60,7 @@ namespace Radiales
             this.fff = new System.Windows.Forms.Label();
             this.OFD = new System.Windows.Forms.OpenFileDialog();
             this.SFD = new System.Windows.Forms.SaveFileDialog();
+            this.BtnReiniciar = new System.Windows.Forms.Button();
             this.PnPresentacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbCarga)).BeginInit();
@@ -81,19 +82,20 @@ namespace Radiales
             // 
             // PnPresentacion
             // 
-            this.PnPresentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(69)))));
+            this.PnPresentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
+            this.PnPresentacion.Controls.Add(this.BtnReiniciar);
             this.PnPresentacion.Controls.Add(this.BtnPausa);
             this.PnPresentacion.Controls.Add(this.label17);
             this.PnPresentacion.Controls.Add(this.label3);
             this.PnPresentacion.Controls.Add(this.linkLabel2);
             this.PnPresentacion.Controls.Add(this.linkLabel1);
             this.PnPresentacion.Controls.Add(this.pictureBox1);
-            this.PnPresentacion.Controls.Add(this.PbCarga);
             this.PnPresentacion.Controls.Add(this.BtnSimulation);
             this.PnPresentacion.Controls.Add(this.BtnIniciar);
             this.PnPresentacion.Controls.Add(this.BtnSave);
             this.PnPresentacion.Controls.Add(this.BtnOpen);
             this.PnPresentacion.Controls.Add(this.label1);
+            this.PnPresentacion.Controls.Add(this.PbCarga);
             this.PnPresentacion.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnPresentacion.ForeColor = System.Drawing.Color.Transparent;
             this.PnPresentacion.Location = new System.Drawing.Point(0, 0);
@@ -145,7 +147,7 @@ namespace Radiales
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.LinkColor = System.Drawing.SystemColors.Control;
-            this.linkLabel2.Location = new System.Drawing.Point(291, 71);
+            this.linkLabel2.Location = new System.Drawing.Point(289, 71);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(77, 15);
             this.linkLabel2.TabIndex = 19;
@@ -177,7 +179,7 @@ namespace Radiales
             // PbCarga
             // 
             this.PbCarga.Image = ((System.Drawing.Image)(resources.GetObject("PbCarga.Image")));
-            this.PbCarga.Location = new System.Drawing.Point(610, 4);
+            this.PbCarga.Location = new System.Drawing.Point(545, 4);
             this.PbCarga.Name = "PbCarga";
             this.PbCarga.Size = new System.Drawing.Size(100, 100);
             this.PbCarga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -278,7 +280,7 @@ namespace Radiales
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(69)))));
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
             this.panel7.Controls.Add(this.NbError);
             this.panel7.Controls.Add(this.NbRadiales);
             this.panel7.Controls.Add(this.panel6);
@@ -301,9 +303,9 @@ namespace Radiales
             // 
             // NbError
             // 
-            this.NbError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(69)))));
+            this.NbError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
             this.NbError.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NbError.DecimalPlaces = 4;
+            this.NbError.DecimalPlaces = 3;
             this.NbError.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NbError.ForeColor = System.Drawing.Color.White;
             this.NbError.Increment = new decimal(new int[] {
@@ -322,7 +324,7 @@ namespace Radiales
             1,
             0,
             0,
-            262144});
+            196608});
             this.NbError.Name = "NbError";
             this.NbError.Size = new System.Drawing.Size(59, 19);
             this.NbError.TabIndex = 37;
@@ -331,10 +333,11 @@ namespace Radiales
             0,
             0,
             196608});
+            this.NbError.ValueChanged += new System.EventHandler(this.GlChange);
             // 
             // NbRadiales
             // 
-            this.NbRadiales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(3)))), ((int)(((byte)(69)))));
+            this.NbRadiales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
             this.NbRadiales.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NbRadiales.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NbRadiales.ForeColor = System.Drawing.Color.White;
@@ -358,6 +361,7 @@ namespace Radiales
             0,
             0,
             0});
+            this.NbRadiales.ValueChanged += new System.EventHandler(this.RdChange);
             // 
             // panel6
             // 
@@ -478,7 +482,26 @@ namespace Radiales
             // 
             this.OFD.FileName = "openFileDialog1";
             // 
-            // Dashboard
+            // BtnReiniciar
+            // 
+            this.BtnReiniciar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnReiniciar.BackgroundImage")));
+            this.BtnReiniciar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnReiniciar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnReiniciar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.BtnReiniciar.FlatAppearance.BorderSize = 0;
+            this.BtnReiniciar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
+            this.BtnReiniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(144)))), ((int)(((byte)(166)))));
+            this.BtnReiniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReiniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.BtnReiniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.BtnReiniciar.Location = new System.Drawing.Point(643, 37);
+            this.BtnReiniciar.Name = "BtnReiniciar";
+            this.BtnReiniciar.Size = new System.Drawing.Size(35, 35);
+            this.BtnReiniciar.TabIndex = 59;
+            this.BtnReiniciar.UseVisualStyleBackColor = true;
+            this.BtnReiniciar.Click += new System.EventHandler(this.Reset);
+            // 
+            // Radiales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -489,10 +512,11 @@ namespace Radiales
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.Name = "Dashboard";
+            this.Name = "Radiales";
             this.Opacity = 0.98D;
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
+            this.Text = "Radiales";
             this.PnPresentacion.ResumeLayout(false);
             this.PnPresentacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -537,5 +561,6 @@ namespace Radiales
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.NumericUpDown NbError;
         private System.Windows.Forms.Button BtnPausa;
+        private System.Windows.Forms.Button BtnReiniciar;
     }
 }

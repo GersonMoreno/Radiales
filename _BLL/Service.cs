@@ -57,7 +57,7 @@ namespace _BLL
                 }
                 EG = ErrorPatron / (Plataforma.Red.Salidas.Count * Plataforma.Red.Patrones.Count);
                 //if (EG > 0.0001 && EG < 0.001)
-                if (EG < Plataforma.Red.ErrorOptimo)
+                if (EG < Plataforma.Red.ErrorOptimo && (EG > .0001 && EG < .005))
                 {
                     Console.WriteLine("Criterio de paro");
                     Plataforma.Red.Error = EG;
@@ -73,6 +73,7 @@ namespace _BLL
                     {
                         Plataforma.Red.Radiales.Add(new Radial());
                     }*/
+                    Console.WriteLine("Overfitting o error goal no superado");
                     Console.WriteLine($"Nuevos radios: {numeroRadios} - error anterior: {EG}");
                     Plataforma.Red.Error = EG;
                     Plataforma.Red.Iteraciones++;

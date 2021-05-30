@@ -9,4 +9,3 @@ C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_ENTITY\bin\Debug\_ENTITY.
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_ENTITY\obj\Debug\_ENTITY.csproj.CoreCompileInputs.cache
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_ENTITY\obj\Debug\_ENTITY.dll
 C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_ENTITY\obj\Debug\_ENTITY.pdb
-C:\Users\bdmtnz\Documents\DesktopProjects\IA\Radiales\_ENTITY\obj\Debug\_ENTITY.csprojAssemblyReference.cache

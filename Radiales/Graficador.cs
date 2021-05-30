@@ -4,6 +4,7 @@ using System.IO;
 using System.Windows.Forms;
 
 using _ENTITY;
+using System.Drawing;
 
 namespace Radiales
 {
@@ -11,13 +12,12 @@ namespace Radiales
     {
         private int i { get; set; }
         public bool Crear { get; set; }
-        public double Menor { get; set; }
 
         private readonly Red Red;
+        private int Iteracion { get; set; }
 
         public Graficador(Red Red)
         {
-            Menor = 100;
             this.Red = Red;
             Crear = true;
             InitializeComponent();
@@ -65,16 +65,19 @@ namespace Radiales
             {
                 Invoke(new Action(() =>
                 {
-                    Menor = Menor > Plataforma.Red.Error ? Plataforma.Red.Error : Menor;
-                    grafica1.Series["ErrorIT"].Points.Add(Plataforma.Red.Error);
-                    var j = 1;
-                    foreach (var item in Plataforma.Red.Salidas)
+                    if (Iteracion % 2 == 0)
                     {
-                        chart2.Series["Error " + j].Points.Add(item.Error);
-                        j++;
+                        grafica1.Series["ErrorIT"].Points.Add(Plataforma.Red.Error);
+                        var j = 1;
+                        foreach (var item in Plataforma.Red.Salidas)
+                        {
+                            chart2.Series["Error " + j].Points.Add(item.Error);
+                            j++;
+                        }
+                        i++;
+                        CargarDatos();
                     }
-                    i++;
-                    CargarDatos();
+                    Iteracion++;
                 }));
             }
         }
@@ -83,7 +86,22 @@ namespace Radiales
         {
             //LbUmbral.Text = Plataforma.Red.Umbral.Valor.ToString();
             LbError.Text = Plataforma.Red.Error.ToString();
-            LbMenor.Text = Menor.ToString();
+            //LbEstado.Text = Menor.ToString();
+            if(Plataforma.Red.Error <= Plataforma.Red.ErrorOptimo && (Plataforma.Red.Error > .0001 && Plataforma.Red.Error < .005))
+            {
+                LbEstado.Text = "Entrenado";
+                LbEstado.ForeColor = Color.Green;
+            }
+            else if(Plataforma.Red.Error > Plataforma.Red.ErrorOptimo)
+            {
+                LbEstado.Text = "Error alto";
+                LbEstado.ForeColor = Color.Red;
+            }
+            else
+            {
+                LbEstado.Text = "Overfitting";
+                LbEstado.ForeColor = Color.Orange;
+            }
             LbIntentos.Text = Plataforma.Red.Iteraciones.ToString();
             LbErrorPor.Text = (Plataforma.Red.Error / Plataforma.Red.ErrorOptimo).ToString();
             //LbWs.Text = Plataforma.W;

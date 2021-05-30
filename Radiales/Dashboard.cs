@@ -15,12 +15,12 @@ using _ENTITY;
 
 namespace Radiales
 {
-    public partial class Dashboard : Form
+    public partial class Radiales : Form
     {
         Service Service;
         Red Red;
 
-        public Dashboard()
+        public Radiales()
         {
             Service = new Service();
             InitializeComponent();
@@ -182,6 +182,30 @@ namespace Radiales
             ShowInfo(Red);
         }
 
+        private void GlChange(object sender, EventArgs e)
+        {
+            Red.ErrorOptimo = (double)NbError.Value;
+        }
 
+        private void RdChange(object sender, EventArgs e)
+        {
+            Reset();
+        }
+
+        private void Reset(object sender, EventArgs e)
+        {
+            Reset();
+        }
+
+        private void Reset()
+        {
+            Red.Radiales.Clear();
+            Red.Error = 10;
+            Red.ErrorOptimo = (double)NbError.Value;
+            for (int i = 0; i < NbRadiales.Value; i++)
+            {
+                Red.Radiales.Add(new Radial());
+            }
+        }
     }
 }
