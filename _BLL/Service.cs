@@ -37,13 +37,16 @@ namespace _BLL
                     }
                 }
                 Plataforma.Red = Repo.Interpolar(Plataforma.Red);
-                for (int j = 0; j < Plataforma.Red.Salidas.Count; j++)
+                var ErrorIteracion = .0;
+                for (int i = 0; i < Plataforma.Red.Patrones.Count; i++)
                 {
-                    for (int i = 0; i < Plataforma.Red.Patrones.Count; i++)
+                    ErrorPatron = 0.0;
+                    ErrorIteracion = .0;
+                    var ErrorSalidas = .0;
+                    for (int j = 0; j < Plataforma.Red.Salidas.Count; j++)
                     {
                         Activaciones = new List<double>();
                         Pesos = new List<double>();
-                        ErrorPatron = 0.0;
                         for (int h = 0; h < Plataforma.Red.Radiales.Count; h++)
                         {
                             Activaciones.Add(Plataforma.Red.Radiales[h].Activacion[i]);
@@ -52,12 +55,15 @@ namespace _BLL
 
                         Plataforma.Red.Salidas[j].YR = CalcularYR(Activaciones, Pesos, Plataforma.Red.Salidas[j].Umbral.Valor);
                         Plataforma.Red.Salidas[j].Error = Plataforma.Red.Salidas[j].YD - Plataforma.Red.Salidas[j].YR;
-                        ErrorPatron += Math.Abs(Plataforma.Red.Salidas[j].Error);
+                        ErrorSalidas += Math.Abs(Plataforma.Red.Salidas[j].Error);
                     }
+                    ErrorPatron = ErrorSalidas / Plataforma.Red.Salidas.Count;
+                    ErrorIteracion += ErrorPatron;
                 }
-                EG = ErrorPatron / (Plataforma.Red.Salidas.Count * Plataforma.Red.Patrones.Count);
+                EG = ErrorIteracion / Plataforma.Red.Patrones.Count;
                 //if (EG > 0.0001 && EG < 0.001)
-                if (EG < Plataforma.Red.ErrorOptimo && (EG > .0001 && EG < .005))
+                //if (EG < Plataforma.Red.ErrorOptimo && (EG > .0001 && EG < .005))
+                if (EG < Plataforma.Red.ErrorOptimo)
                 {
                     Console.WriteLine("Criterio de paro");
                     Plataforma.Red.Error = EG;

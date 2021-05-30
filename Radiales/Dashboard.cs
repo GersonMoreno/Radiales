@@ -206,6 +206,15 @@ namespace Radiales
             {
                 Red.Radiales.Add(new Radial());
             }
+            foreach (var item in Red.Salidas)
+            {
+                item.Pesos.Clear();
+                for (int i = 0; i < NbRadiales.Value; i++)
+                {
+                    item.Pesos.Add(new Peso());
+                }
+            }
+            Plataforma.Red = Red;
         }
     }
 }

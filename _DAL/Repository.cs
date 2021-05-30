@@ -14,8 +14,8 @@ namespace _DAL
         public Repository()
         {
             Api = new MLApp.MLApp();
-            Api.MinimizeCommandWindow();
-            Api.Quit();
+            //Api.MinimizeCommandWindow();
+            //Api.Quit();
         }
 
         public Red Interpolar(Red Red)
@@ -52,9 +52,9 @@ namespace _DAL
             //Console.WriteLine(Operation);
 
             var Answer = Api.Execute(Operation);
-            Api.MinimizeCommandWindow();
-            Api.Quit();
-            //Console.WriteLine(Answer);
+            //Api.MinimizeCommandWindow();
+            //Api.Quit();
+            Console.WriteLine(Answer);
 
             var Lines = Answer.Split('\n');
             var umbral = true;

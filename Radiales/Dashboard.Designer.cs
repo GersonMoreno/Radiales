@@ -319,7 +319,7 @@ namespace Radiales
             1,
             0,
             0,
-            65536});
+            0});
             this.NbError.Minimum = new decimal(new int[] {
             1,
             0,

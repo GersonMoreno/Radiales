@@ -87,7 +87,8 @@ namespace Radiales
             //LbUmbral.Text = Plataforma.Red.Umbral.Valor.ToString();
             LbError.Text = Plataforma.Red.Error.ToString();
             //LbEstado.Text = Menor.ToString();
-            if(Plataforma.Red.Error <= Plataforma.Red.ErrorOptimo && (Plataforma.Red.Error > .0001 && Plataforma.Red.Error < .005))
+            //if(Plataforma.Red.Error <= Plataforma.Red.ErrorOptimo && (Plataforma.Red.Error > .0001 && Plataforma.Red.Error < .005))
+            if (Plataforma.Red.Error <= Plataforma.Red.ErrorOptimo)
             {
                 LbEstado.Text = "Entrenado";
                 LbEstado.ForeColor = Color.Green;
