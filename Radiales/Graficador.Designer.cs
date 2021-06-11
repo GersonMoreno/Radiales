@@ -54,31 +54,36 @@ namespace Radiales
             // LbEstado
             // 
             this.LbEstado.AutoSize = true;
+            this.LbEstado.BackColor = System.Drawing.SystemColors.Control;
             this.LbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LbEstado.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbEstado.Location = new System.Drawing.Point(594, 62);
+            this.LbEstado.ForeColor = System.Drawing.Color.Black;
+            this.LbEstado.Location = new System.Drawing.Point(529, 52);
             this.LbEstado.Name = "LbEstado";
             this.LbEstado.Size = new System.Drawing.Size(18, 20);
             this.LbEstado.TabIndex = 22;
             this.LbEstado.Text = "?";
+            this.LbEstado.Visible = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(498, 62);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(433, 52);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 20);
             this.label4.TabIndex = 21;
             this.label4.Text = "Estado : ";
+            this.label4.Visible = false;
             // 
             // LbError
             // 
             this.LbError.AutoSize = true;
+            this.LbError.BackColor = System.Drawing.SystemColors.Control;
             this.LbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LbError.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbError.Location = new System.Drawing.Point(594, 30);
+            this.LbError.ForeColor = System.Drawing.Color.Black;
+            this.LbError.Location = new System.Drawing.Point(291, 360);
             this.LbError.Name = "LbError";
             this.LbError.Size = new System.Drawing.Size(18, 20);
             this.LbError.TabIndex = 20;
@@ -87,9 +92,10 @@ namespace Radiales
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.Control;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(498, 30);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(195, 360);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 20);
             this.label8.TabIndex = 19;
@@ -99,9 +105,9 @@ namespace Radiales
             // 
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 121);
+            this.label2.Location = new System.Drawing.Point(21, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(439, 25);
+            this.label2.Size = new System.Drawing.Size(349, 25);
             this.label2.TabIndex = 25;
             this.label2.Text = "Error Obtenido vs Goal";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -120,7 +126,7 @@ namespace Radiales
             this.grafica1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.grafica1.Legends.Add(legend1);
-            this.grafica1.Location = new System.Drawing.Point(32, 146);
+            this.grafica1.Location = new System.Drawing.Point(21, 78);
             this.grafica1.Name = "grafica1";
             this.grafica1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
             series1.ChartArea = "ChartArea1";
@@ -128,7 +134,7 @@ namespace Radiales
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.grafica1.Series.Add(series1);
-            this.grafica1.Size = new System.Drawing.Size(439, 256);
+            this.grafica1.Size = new System.Drawing.Size(349, 256);
             this.grafica1.TabIndex = 27;
             this.grafica1.Text = "chart1";
             // 
@@ -146,7 +152,7 @@ namespace Radiales
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(502, 146);
+            this.chart2.Location = new System.Drawing.Point(395, 78);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series2.ChartArea = "ChartArea1";
@@ -154,7 +160,7 @@ namespace Radiales
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(439, 256);
+            this.chart2.Size = new System.Drawing.Size(337, 256);
             this.chart2.TabIndex = 28;
             this.chart2.Text = "chart1";
             // 
@@ -162,9 +168,9 @@ namespace Radiales
             // 
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(502, 121);
+            this.label1.Location = new System.Drawing.Point(395, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(439, 25);
+            this.label1.Size = new System.Drawing.Size(337, 25);
             this.label1.TabIndex = 31;
             this.label1.Text = "Error YD vs YR";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -172,9 +178,10 @@ namespace Radiales
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(31, 30);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(759, 195);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 20);
             this.label3.TabIndex = 29;
@@ -183,9 +190,10 @@ namespace Radiales
             // LbIntentos
             // 
             this.LbIntentos.AutoSize = true;
+            this.LbIntentos.BackColor = System.Drawing.SystemColors.Control;
             this.LbIntentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LbIntentos.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbIntentos.Location = new System.Drawing.Point(127, 30);
+            this.LbIntentos.ForeColor = System.Drawing.Color.Black;
+            this.LbIntentos.Location = new System.Drawing.Point(855, 195);
             this.LbIntentos.Name = "LbIntentos";
             this.LbIntentos.Size = new System.Drawing.Size(18, 20);
             this.LbIntentos.TabIndex = 30;
@@ -194,37 +202,41 @@ namespace Radiales
             // LbErrorPor
             // 
             this.LbErrorPor.AutoSize = true;
+            this.LbErrorPor.BackColor = System.Drawing.SystemColors.Control;
             this.LbErrorPor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LbErrorPor.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbErrorPor.Location = new System.Drawing.Point(127, 62);
+            this.LbErrorPor.ForeColor = System.Drawing.Color.Black;
+            this.LbErrorPor.Location = new System.Drawing.Point(116, 52);
             this.LbErrorPor.Name = "LbErrorPor";
             this.LbErrorPor.Size = new System.Drawing.Size(18, 20);
             this.LbErrorPor.TabIndex = 33;
             this.LbErrorPor.Text = "?";
+            this.LbErrorPor.Visible = false;
             // 
             // LbPorcentaje
             // 
             this.LbPorcentaje.AutoSize = true;
+            this.LbPorcentaje.BackColor = System.Drawing.SystemColors.Control;
             this.LbPorcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LbPorcentaje.ForeColor = System.Drawing.SystemColors.Control;
-            this.LbPorcentaje.Location = new System.Drawing.Point(31, 62);
+            this.LbPorcentaje.ForeColor = System.Drawing.Color.Black;
+            this.LbPorcentaje.Location = new System.Drawing.Point(20, 52);
             this.LbPorcentaje.Name = "LbPorcentaje";
             this.LbPorcentaje.Size = new System.Drawing.Size(80, 20);
             this.LbPorcentaje.TabIndex = 32;
             this.LbPorcentaje.Text = "Error (%): ";
+            this.LbPorcentaje.Visible = false;
             // 
             // Graficador
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(975, 439);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.LbErrorPor);
             this.Controls.Add(this.LbPorcentaje);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LbIntentos);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.LbEstado);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.LbError);

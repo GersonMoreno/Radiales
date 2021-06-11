@@ -35,8 +35,8 @@ namespace Radiales
             SFD.Filter = "Archivo XML (*.XML)|*.XML";
 
             //CONFIG LINK
-            linkLabel1.Links.Add(0, linkLabel1.Text.Length, "https://github.com/bdmtnz");
-            linkLabel2.Links.Add(0, linkLabel2.Text.Length, "https://sites.google.com/a/unicesar.edu.co/tonnyjimenezm/");
+            //linkLabel1.Links.Add(0, linkLabel1.Text.Length, "https://github.com/bdmtnz");
+            //linkLabel2.Links.Add(0, linkLabel2.Text.Length, "https://sites.google.com/a/unicesar.edu.co/tonnyjimenezm/");
 
             //CARGA DE CACHÉ
             var Rd = Service.GetXML(null);
@@ -98,7 +98,7 @@ namespace Radiales
 
         private async void RunTask()
         {
-            PbCarga.Visible = true;
+            //PbCarga.Visible = true;
             Plataforma.Continuar = true;
             Plataforma.Red = Red;
             var T = new Task(Service.Entrenar);
@@ -106,7 +106,7 @@ namespace Radiales
             await T;
             Red = Plataforma.Red;
             ShowInfo(Red);
-            PbCarga.Visible = false;
+            //PbCarga.Visible = false;
             BtnPausa.Visible = false;
             BtnIniciar.Visible = true;
         }
